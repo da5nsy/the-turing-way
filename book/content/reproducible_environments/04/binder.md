@@ -90,7 +90,7 @@ If a project contains no file specifying the computational environment when a Bi
   ```
   - The requirement.txt file does not need to be hand written. Running the command `pip freeze > requirements.txt` will output a requirements.txt file that fully defines the Python environment.
 - runtime.txt
-  - Used to specify a particular version of Python of R for the Binder to use.
+  - Used to specify a particular version of Python or R for the Binder to use.
   - To specify which version of R to use specify find the date it was captured on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility) and include it in the runtime.txt file as
   ```
   r-<YYYY>-<MM>-<DD>
