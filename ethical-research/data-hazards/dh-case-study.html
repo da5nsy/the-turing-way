@@ -1,0 +1,1466 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop &#8212; The Turing Way</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/script.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ethical-research/data-hazards/dh-case-study';</script>
+    <link rel="canonical" href="https://book.the-turing-way.org/ethical-research/data-hazards/dh-case-study.html" />
+    <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ethical Considerations when Choosing an Open Source Governance Model" href="../ethics-open-source-governance.html" />
+    <link rel="prev" title="How to use the Data Hazards project" href="dh-how-to-use.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️<i>The Turing Way</i> is moving domain! We will soon move to <a href='https://book.the-turing-way.org'>book.the-turing-way.org</a>. You can use new domain now! Later, the old domain will redirect you to the new location.</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo-detail-with-text.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo-detail-with-text.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/renv.html">Reproducible Environments</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-options.html">Capturing Computational Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-package.html">Package Management Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-yaml.html">YAML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-virtualmachine.html">Virtual Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-containers.html">Containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-resources.html">Resources and Checklist</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/binderhub.html">BinderHub</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-introduction.html">Introduction to BinderHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-compute.html">Compute Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-build.html">Build Your Own BinderHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-resources.html">Resources for BinderHub</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/code-quality.html">Code quality</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-style.html">Code Style and Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-robust.html">Writing Robust Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/testing.html">Code Testing</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-guidance.html">General Guidance for Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-overview.html">Overview of Testing Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-smoketest.html">Smoke Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-unittest.html">Unit Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-integrationtest.html">Integration Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-systemtest.html">System Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-acceptance-regression.html">Acceptance and Regression Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-runtime.html">Runtime Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-driven-development.html">Test Driven Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-exceptions.html">Challenges and Exceptional Cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-checklist.html">Checklist for Code Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/reviewing.html">Code Reviewing Process</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-motivation.html">Motivation for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-recommend.html">Recommendations for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-workflow.html">Code review workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-checklist.html">Checklist for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-resources.html">Resources for code reviewing</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/code-reuse.html">Reusable Code</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-reuse/code-reuse-overview.html">Overview of Code Reuse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-reuse/code-reuse-details.html">Detailed Recommendations for Code Reuse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/ci.html">Continuous Integration (CI)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-options.html">Intro to Continuous integration (CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-github-actions.html">Getting started with GitHub actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-building-gh-actions.html">Building a Block of a GitHub actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-practices.html">Best practices and recommendations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/make.html">Reproducible Research with Make</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-examples.html">Learn "Make" by examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-debugging.html">Debugging Makefiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-casestudy.html">Case Study of a Reproducible Paper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-results.html">Including numerical results and tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-resources.html">Resources for "Make"</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-appendix.html">Appendix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../reproducible-research/compendia.html">Research Compendia</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/risk-assess.html">Risk Assessment</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/risk-assess/risk-assess-impact.html">Complexity and Impact of Risk Assessment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/risk-assess/risk-assess-resources.html">Summary of Risk Assessment</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/case-studies.html">Case Studies</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/case-studies/case-study-statistical.html">A Statistical Methods Manuscript</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../project-design/project-design.html">Guide for Project Design</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/pd-overview.html">Overview of Project Design</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-planning.html">Planning for Project Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-repro.html">Collaborative project documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-methods.html">Reproducibility Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-version.html">Version Control and Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-sharing.html">Sharing Your Research Work</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../project-design/pd-checklist.html">Project Design Checklist</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/project-repo.html">Creating Project Repositories</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-readme.html">Landing Page - README File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-roadmapping.html">Roadmapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-contributors.html">Contributors and Communication Pathways</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-participation.html">Participation Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-advanced.html">Advanced Structure for Data Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/persona.html">Personas and Pathways</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/persona/persona-creation.html">Persona Creation Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/persona/persona-contributors.html">Contributor Pathways</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../project-design/filenaming.html">File Naming Convention</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/code-styling.html">Code Styling and Linting</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-guidelines.html">Guidelines for Code Styling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-readability.html">Writing Human Readable Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-tools.html">Code Styling Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdp.html">Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/types.html">Types of Sensitive Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/personal.html">Personal Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/confidential.html">Confidential Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/biological.html">Biological Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/metadata.html">Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/combined.html">Combined Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdpm.html">Managing Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/informed.html">Informed consent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/data-privacy-strategies.html">Data Privacy Strategies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/sharing-sensitive-data.html">Sharing Sensitive Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdpw.html">Working on Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/trew.html">Working with Trusted Research Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-private-learning.html">Privacy Preserving Machine Learning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-sensitive-files.html">Keeping Sensitive Files Secure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-sensitive-code.html">Sharing Your Jupyter Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-exposing-data.html">Removing Sensitive Data From GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/data-governance.html">Data Governance</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/data-governance/data-gov-ml.html">Data Governance for the Machine Learning Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/data-governance/bigcode_casestudy.html">BigCode Data Governance Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/missing-data.html">Missing Data Handling</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-structures.html">Missing Data Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-visualising-missingness.html">Visualising Missingness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-methods.html">Missing Data Handling Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-structured-missingness.html">Structured Missingness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-checklist-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/risks-of-bias.html">Risks of Bias in Research</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/identifying-risks-of-bias.html">Identifying Risks of Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/confounding-variables.html">Confounding Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/validation-generalisability.html">Validation and Generalisability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/discrimination-bias.html">Discrimination and Bias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../communication/communication.html">Guide for Communication</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-31"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/comms-overview.html">Overview of Guide for Communication</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-32"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-principles.html">Principles of Communicating with Wider Audiences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-accessibly.html">Communicating Accessibly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-resources.html">Resources and Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/open.html">Open Scholarship</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-33"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/open/education.html">Open Education</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/blogs.html">Blogs for Research Communication</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-34"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/blogs/blogs-webpage.html">Building a Webpage for Blogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/blogs/blogs-personal-stories.html">Personal stories - Blogs</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/lay-summaries.html">Lay Summaries</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-35"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/lay-summaries/lay-summaries-personal-stories.html">Personal Stories - Lay summaries</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/podcasts.html">Podcasts for Research Communication</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-36"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/podcasts/podcasts-personal-stories.html">Personal Stories - Podcasts</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/presentations.html">Presenting Posters and Conference Talks</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-37"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/presentations/presentations-remote.html">Presenting at Remote Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/presentations/presentations-personal-stories.html">Personal stories - Presenting Outside of Your Discipline</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/social-media.html">Social Media for Research Communications</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-38"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/social-media/social-media-twitter-tips.html">Tips for starting with X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/social-media/social-media-twitter-multiple.html">Managing multiple X accounts</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/research-objects.html">Research Objects in Action</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-39"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/research-objects/ro-concepts.html">Lifecycle</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/research-objects/ro-implementation.html">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/citable.html">Making Research Objects Citable</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-40"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-steps.html">Steps for Making Research Objects Citable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cite.html">Citing Research Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cff.html">Software citation with CITATION.cff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cffinit.html">Create a CITATION.cff using CFFinit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-linking.html">Linking Research Objects</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-orcid.html">ORCID to Collect your Research Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-resources.html">Checklists and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/dif-articles.html">Publishing Different Article Types</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-41"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/data.html">Data Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/methods.html">Methods Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/micro.html">Micropublishing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/reg.html">Registered Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/software.html">Software Papers</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/os-comms.html">Communications in Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-42"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/os-comms/os-comms-issue-tracking.html">Issue Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/os-comms/os-comms-channels.html">Communication Channels</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/aa.html">Authorship and Contributions on Academic Articles</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-overview.html">Overview of Academic Authorship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-misconduct.html">Types of Authorship Misconduct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-traditions.html">Discipline Specific Authorship Traditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-equitable.html">Large and Equitable Authorships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-tips.html">Tips on How to Get Authorship Right</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-stories-interdisciplinary.html">Personal Stories - Authorship on Interdisciplinary Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-stories-community.html">Personal Stories - Large Collaborative Research Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/peer-review.html">Peer Review</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-44"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-overview.html">Peer Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-open.html">Open Peer Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-guidance.html">Guidance on Peer Review for a Journal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-code.html">Guidance on Code Review</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-resources.html">Resources</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/binder.html">Binder</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-45"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/binder/zero-to-binder.html">Zero-to-Binder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../collaboration/collaboration.html">Guide for Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-46"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/github-novice.html">Getting Started With GitHub</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-47"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-motivation.html">Motivation for Using GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-firststeps.html">First steps on GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-features.html">Using more GitHub features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-advanced.html">Advanced GitHub features</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/maintain-review.html">Maintainers and Reviewers on GitHub</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-48"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-maintenance.html">Project Maintenance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-permissions.html">Ownership and Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-review.html">Reviewing Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-merge.html">Merging Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/organising-meetings.html">Organising Meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/coworking.html">Organising Online Coworking Calls</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/organising-conference.html">Organising Conferences</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-49"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/organising-conference/reg-forms.html">Registration Forms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/organising-conference/reg-form-template.html">Template for Registration Form</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/chairing.html">Chairing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/event-participation.html">Participating in Events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/ppie-events.html">Hosting Events with Public Contributors</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-50"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-planning.html">Planning your PPIE Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-location.html">Location and Venue Planning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-schedules.html">Scheduling and Agenda Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-comms.html">Communication Strategy and Planning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-socials.html">Inclusive Social and Networking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-tech.html">Technology Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-resources.html">Additional Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/informal-chats.html">Informal Coffee Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/event-tools.html">Tools for Facilitating Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/stakeholder-engagement.html">Facilitating Stakeholder Engagement</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/new-community.html">Managing a New Community and Team</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-51"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-guide.html">Guide to Planning a Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-techissues.html">Addressing Technical Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-differences.html">Valuing Diversity and Differences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-teamwork.html">Teamwork</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/academic-industry.html">Academic-Industry Collaborations</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-52"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/academic-industry/academic-industry-establish.html">Establishing an Academic-Industry Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/academic-industry/academic-industry-community.html">Community Building in an Academic-Industry Collaboration</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../collaboration/academic-industry/intro-case-studies-and-best-practices-in-academic-industry-collaboration.html">Case Studies and Best Practices in Academic-Industry Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-53"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../collaboration/academic-industry/case-study-library.html">Case Study Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collaboration/academic-industry/online-resources-best-practices.html">Online Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/ambassador-schemes.html">Ambassador Schemes</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-54"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ambassador-schemes/ambassador-schemes-establish.html">Establishing and Running an Ambassador Scheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ambassador-schemes/ambassador-schemes-personal-story.html">Turing-Roche Community Scholar Scheme Personal Story</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/team-manual.html">Team Manual</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-55"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/team-manual/team-manual-on-off-boarding.html">On and Offboarding Team Members</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/leadership.html">Open Leadership in Data Science</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-56"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-features.html">Important Features of Leadership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-building.html">Building Healthy Leadership Skills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-opportunities.html">Creating Leadership Opportunities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-story-hackathon.html">Personal Story from Running a Hackathon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-story-data-librarian.html">Personal Story of Leadership by a Data Librarian</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/research-infrastructure-roles.html">Research Infrastructure Roles</a><input class="toctree-checkbox" id="toctree-checkbox-57" name="toctree-checkbox-57" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-57"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/community-manager.html">Community Managers Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-steward.html">Data Stewards Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-steward-personal-story.html">Data Steward Personal Story</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-wrangler.html">Data Wrangler Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/rse.html">Research Software Engineers Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/rse-personal-story.html">Research Software Engineering Personal Story</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/ram.html">Research Application Manager Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/research-infrastructure-developer.html">Research Infrastructure Developer Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/remote-collab.html">Remote Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-58" name="toctree-checkbox-58" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-58"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-prosandcons.html">Pros and Cons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-guidelines.html">Guidelines for Remote Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-team.html">Managing Distributed Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-useful-resources.html">Useful Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/hybrid-collab.html">Hybrid Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-59" name="toctree-checkbox-59" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-59"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-challenges.html">Challenges faced during Hybrid Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-guidelines.html">Guidelines for Hybrid Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/shared-ownership.html">Shared Ownership in Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-60" name="toctree-checkbox-60" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-60"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-projects.html">Project Ownership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-models.html">Shared Ownership Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-challenges.html">Challenges with Applying Ownership Models Retroactively</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-defaults.html">Nudging for a Better Default</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/oss-sustainability/oss-sustainability-challenges.html">Sustainability of Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-61" name="toctree-checkbox-61" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-61"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/oss-sustainability/oss-sustainability-examples.html">Examples of Open Source Business Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../ethical-research.html">Guide for Ethical Research</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-62" name="toctree-checkbox-62" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-62"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ethics-intro.html">Introduction to Research Ethics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ethics-committees.html">Research Ethics Committees Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preclinical-research.html">Ethical Decisions in Preclinical Research</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../law-policy.html">Law, Policy and Human Rights in Ethics</a><input class="toctree-checkbox" id="toctree-checkbox-63" name="toctree-checkbox-63" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-63"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-ethics.html">Ethics and law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-rights.html">Human rights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../social-data.html">Research Ethics for Social Data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data-feminism.html">Data Feminism</a><input class="toctree-checkbox" id="toctree-checkbox-64" name="toctree-checkbox-64" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-64"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data-feminism/data-feminism-power.html">Examining Power</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../activism.html">Activism for Researchers</a><input class="toctree-checkbox" id="toctree-checkbox-65" name="toctree-checkbox-65" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-65"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-unionisation.html">Unionisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-whistleblowing.html">Whistleblowing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-cultural-change.html">Cultural change</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-env-impact.html">The Environmental Impact of Digital Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-robodebt.html">Case study - Robodebt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../activism/activism-case-study-google.html">Case study - Google Workers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../internal-policy.html">Internal Policy Advocacy</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../self-reflection.html">Self-Reflection</a><input class="toctree-checkbox" id="toctree-checkbox-66" name="toctree-checkbox-66" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-66"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-positionality.html">Identity and Positionality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-power.html">Power and Privilege</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-prompts.html">Self-Reflection Prompts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../data-hazards.html">Data-Hazards</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-67" name="toctree-checkbox-67" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-67"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dh-intro.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dh-how-to-use.html">How To Use</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ethics-open-source-governance.html">Ethical Considerations for Open Source Governance Models</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../community-handbook/community-handbook.html">Community Handbook</a><input class="toctree-checkbox" id="toctree-checkbox-68" name="toctree-checkbox-68" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-68"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/coc.html">Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-69" name="toctree-checkbox-69" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-69"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-details.html">Code of Conduct in Detail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-reporting.html">Incident Reporting Guideline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-enforcement.html">Enforcement Manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-acknowledgement.html">Acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/style.html">Style Guide</a><input class="toctree-checkbox" id="toctree-checkbox-70" name="toctree-checkbox-70" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-70"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-citing.html">Citing and Referencing External Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-crossref.html">Cross-Referencing Sections and Chapters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-figures.html">Using Figures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-more-styling.html">Glossary, Special Blocks and More Styling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-custom-styling.html">Custom Styling</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/consistency.html">Maintaining Consistency</a><input class="toctree-checkbox" id="toctree-checkbox-71" name="toctree-checkbox-71" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-71"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-formatting.html">Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-structure.html">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-language.html">Language</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../community-handbook/local-build.html">Build the Turing Way Book locally</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/contributing.html">Contributing and Developing Chapters - Templates and Workflow</a><input class="toctree-checkbox" id="toctree-checkbox-72" name="toctree-checkbox-72" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-72"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/contributing/contributing-templates.html">Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/contributing/contributing-workflow.html">Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/acknowledgement.html">Acknowledging Contributors</a><input class="toctree-checkbox" id="toctree-checkbox-73" name="toctree-checkbox-73" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-73"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-members.html">Community Members and Shared Ownership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-record.html">Record of Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-examples.html">Different Contributions and Acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/translation.html">Translation and Localisation</a><input class="toctree-checkbox" id="toctree-checkbox-74" name="toctree-checkbox-74" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-74"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-localisation.html">Translation of Open Source Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-workflow.html">Welcome to the Translation and Localisation Team of <em>The Turing Way</em>!</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-getting-started.html">Embark on Your Localisation Journey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-hello-crowdin.html">Your Gateway to Crowdsourced Localisation</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/infrastructure.html">Infrastructure</a><input class="toctree-checkbox" id="toctree-checkbox-75" name="toctree-checkbox-75" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-75"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-contributors.html">Publishing Contributors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-external-link-check.html">External Link Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-dns.html">DNS</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/accessibility.html">Accessibility</a><input class="toctree-checkbox" id="toctree-checkbox-76" name="toctree-checkbox-76" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-76"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/accessibility/event-organising.html">Event Organising</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/accessibility/alt-text.html">Alt text</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/communication-channels.html">Communication Platforms</a><input class="toctree-checkbox" id="toctree-checkbox-77" name="toctree-checkbox-77" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-77"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/communication-channels/slack-start-guide.html">Quick Start Guide for Slack</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/communication-channels/slack-welcome-guide.html">Slack Welcome Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/newsletters.html">Monthly Newsletters</a><input class="toctree-checkbox" id="toctree-checkbox-78" name="toctree-checkbox-78" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-78"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-process.html">A Process of Creating a newsletter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-style.html">Newsletter's Style Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-template.html">The Turing Way Newsletter Template</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/bookdash.html">Book Dash Events</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-79"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-application.html">Application and Review Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-logistics.html">Book Dash Logistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-illustrator.html">Working With an Illustrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-selection.html">Participant Selection Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-events.html">Book Dash Main Event Plans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-after.html">After the Book Dash</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/coworking.html">Community Coworking Calls</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-80"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-motivation.html">Background, Motivations, and Techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-collabcafe.html">Online Collaboration Cafe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-weekly.html">Weekly Coworking Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-organisation.html">Organising coworking calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-dropins.html">Drop-in Sessions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/fireside-chat.html">Fireside Chat Series</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-81"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/fireside-chat/fireside-chat-checklist.html">Fireside Chat Planning Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/fireside-chat/fireside-chat-roles.html">Fireside Chat Roles and Responsibilities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../community-handbook/presenting.html">Giving a Turing Way Talk</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/templates.html">Template Collection</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-82"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-index.html">Book Dash Main Shared Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-precall.html">Book Dash Pre-event Onboarding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-github.html">Book Dash GitHub Session</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-notes.html">Book Dash Template for Shared Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-feedback.html">Book Dash Template for Feedback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-coworking-collabcafe.html">Online Collaboration Cafe Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-coworking-weekly.html">Weekly Coworking Call Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-newsletter-draft.html">Template for Drafting Newsletters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-fireside-chat.html">Template for Fireside Chat Shared Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../afterword/afterword.html">Afterword</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-83"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/legal-disclaimer.html">Legal Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/data-usage-statement.html">Data Usage Statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/contributors-record.html">Contributors Record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/collaborators.html">Collaborators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/subprojects.html">Sub-projects, Working Groups, Informal Initiatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/bibliography.html">Bibliography</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/ethical-research/data-hazards/dh-case-study.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fethical-research/data-hazards/dh-case-study.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ethical-research/data-hazards/dh-case-study.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#der-symposium-goals">DER Symposium Goals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organising-the-event">Organising the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-agenda">Creating an Agenda:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advertising-the-event">Advertising the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catering">Catering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-event">Hosting the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-event">Starting the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-event-tips">Hybrid Event Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-a-workshop-data-hazards">Hosting a Workshop: Data Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-event">Post Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-forms">Feedback Forms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">GitHub Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflections">Reflections</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="case-study-data-ethics-and-reproducibility-symposium-and-data-hazards-workshop">
+<span id="er-datahazardscasestudy"></span><h1>Case Study: Data Ethics and Reproducibility Symposium and Data Hazards Workshop<a class="headerlink" href="#case-study-data-ethics-and-reproducibility-symposium-and-data-hazards-workshop" title="Permalink to this headline">#</a></h1>
+<p>We (the organisers: Ceilidh Welsh and Susana Roman Garcia) wanted to create an event that revolved around the Data Hazards framework.
+The event focused on showcasing how different people think about embedding ethics into the work that they do.
+As PhD students, we both felt the need to connect our interest in creating more ethical and reproducible work with our project’s scientific questions.
+This passion for working more ethically brought us together, and we sought to see how other people are embedding ethics into their work.
+We hosted talks from PhD students who have been striving to make their work reproducible, how university lecturers might think of implementing Data Hazards into their material, and more (this is available in this <a class="reference internal" href="#er-datahazardscasestudy-postevent-githubrepo"><span class="std std-ref">GitHub Repository</span></a>).
+We were able to connect with others, share knowledge and learn new skills throughout the process.
+In this chapter, we would like to share with you our experiences, including some of the challenges we faced, and provide tips for people hosting events in the future.</p>
+<section id="overview">
+<span id="er-datahazardscasestudy-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<p>The Data Ethics and Reproducibility (DER) Symposium was a one-day event held at the Alan Turing Institute on March 10th 2023.
+In total, we had eighteen attendees in person and eighteen attendees online, not including volunteers and hosts.
+This symposium aimed to showcase implementations of reproducibility and ethics for research, with a focus on Data Hazards.
+The symposium structure included a variety of speakers, an interactive workshop and networking opportunities.</p>
+<p>A central part of this symposium was the <a class="reference internal" href="../data-hazards.html#er-datahazards"><span class="std std-ref">Data Hazards</span></a> Workshop to provide a collaborative training opportunity for attendees.
+The workshop encourages attendees to explore, discuss and reflect on the ethical implications and wider societal impact of specific data-intensive projects.
+It was an opportunity for attendees to learn how to use the Data Hazards framework and see how it applies to different research projects.
+This allowed attendees to appreciate that ethics is complex, situational and important to discuss in our own contexts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">{note}</span> <span class="pre">**This</span> <span class="pre">case</span> <span class="pre">study</span> <span class="pre">is</span> <span class="pre">an</span> <span class="pre">account</span> <span class="pre">of</span> <span class="pre">our</span> <span class="pre">first-hand</span> <span class="pre">experiences</span> <span class="pre">organising</span> <span class="pre">and</span> <span class="pre">hosting</span> <span class="pre">an</span> <span class="pre">event.</span> <span class="pre">It</span> <span class="pre">may</span> <span class="pre">be</span> <span class="pre">useful</span> <span class="pre">to</span> <span class="pre">you</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">would</span> <span class="pre">like</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">or</span> <span class="pre">organise</span> <span class="pre">your</span> <span class="pre">own</span> <span class="pre">accessible</span> <span class="pre">workshop</span> <span class="pre">in</span> <span class="pre">data</span> <span class="pre">ethics</span> <span class="pre">and</span> <span class="pre">reproducibility</span> <span class="pre">(whether</span> <span class="pre">a</span> <span class="pre">Data</span> <span class="pre">Hazards</span> <span class="pre">workshop</span> <span class="pre">or</span> <span class="pre">not).**</span></code></p>
+<p>For more detailed information and checklists, please see the Turing Way page for <a class="reference internal" href="../../collaboration/organising-conference.html#cl-organising-conferences"><span class="std std-ref">Organising a Conference</span></a>.</p>
+<section id="der-symposium-goals">
+<span id="er-datahazardscasestudy-goals"></span><h3>DER Symposium Goals<a class="headerlink" href="#der-symposium-goals" title="Permalink to this headline">#</a></h3>
+<p><strong>Primary Goal:</strong> to provide an open, inclusive and accessible space for attendees to learn from one another and discuss first-hand experiences applying ethics and reproducibility to their work.
+we hope to discuss the successes and challenges we might face, and importantly how to consider ethics as more than a tick-box exercise in a research project.</p>
+<p><strong>Goals for Event Organisers:</strong>
+To develop our skills in event management and organisation including:</p>
+<ul class="simple">
+<li><p>hosting event platforms for attendee registration.</p></li>
+<li><p>questionnaries and polls.</p></li>
+<li><p>learn about accessibility considerations and requirements.</p></li>
+<li><p>equality impact assessments.</p></li>
+</ul>
+<p>Importantly, we wanted to improve our collaborative, teamwork and networking skills with both volunteers and colleagues to provide a curated and thoughtful event.</p>
+<p><strong>Goals for Event Attendees:</strong></p>
+<ul class="simple">
+<li><p>Identify areas of research projects where wider ethical implications can be considered in different research contexts.</p></li>
+<li><p>Learn through a hands-on workshop how to embed ethics and reproducibility into current work or research.</p></li>
+<li><p>Discover what other attendees are working on in these areas.</p></li>
+</ul>
+</section>
+</section>
+<section id="organising-the-event">
+<span id="er-datahazardscasestudy-organising"></span><h2>Organising the Event<a class="headerlink" href="#organising-the-event" title="Permalink to this headline">#</a></h2>
+<p>Here we discuss the logistics for organising an event, from setting up and promoting the event on an external platform to collaborating with volunteers and speakers to help successfully run the event on the day.</p>
+<section id="creating-an-agenda">
+<span id="er-datahazardscasestudy-organising-agenda"></span><h3>Creating an Agenda:<a class="headerlink" href="#creating-an-agenda" title="Permalink to this headline">#</a></h3>
+<p>The first step was to put together some initial ideas for the agenda.
+We worked together using Google Docs.
+We used Google Docs because it allowed us to easily share the documents with other people, and it was easy to access.
+We made sure that no private or sensitive data was in any publicly shared Google Docs.
+Our finalised agenda is <a class="reference external" href="https://docs.google.com/document/d/13buQgzAbTTSWVtONXC3cnjegWapJ0CBkL7TBkqNNRqU/edit">here</a>.
+What did this process look like for us?</p>
+<ul class="simple">
+<li><p>brainstorming themed talks,</p></li>
+<li><p>deciding on keynote speakers,</p></li>
+<li><p>practicalities of running the <a class="reference external" href="https://datahazards.com/contents/materials/workshop.html">Data Hazards Workshop</a>,</p></li>
+<li><p>identifying the symposium’s target audience,</p></li>
+<li><p>planning the event start and end times, including rest breaks*,</p></li>
+<li><p>catering options,</p></li>
+<li><p>deciding whether to run a hybrid event (online and in-person). Guidelines for hybrid collaboration and events can be found <a class="reference external" href="https://book.the-turing-way.org/collaboration/hybrid-collab">here</a>.</p></li>
+</ul>
+<p>*To make the event more accessible, it was important for us to <strong>make sure there were enough ‘bio breaks’</strong> to allow people to stretch their bodies, use the toilet and take a breather.</p>
+<p><strong>Speakers</strong>
+A major part of putting together the agenda was all about picking our speakers.
+Speakers are what made our symposium come alive, so we were eager to connect with different people to make sure our event had a mix of perspectives.</p>
+<p>When looking for speakers we:</p>
+<ul class="simple">
+<li><p>reached out directly to keynote speakers whose research area or field considered data ethics and reproducibility.</p></li>
+<li><p>invited speakers from both inside and outside our organisation to include a variety of experiences.</p></li>
+<li><p>asked for abstracts and titles, providing potential speakers with an estimated length of talk (including time for questions) and session they would present in.</p></li>
+</ul>
+</section>
+<section id="advertising-the-event">
+<span id="er-datahazardscasestudy-organising-advertising"></span><h3>Advertising the Event<a class="headerlink" href="#advertising-the-event" title="Permalink to this headline">#</a></h3>
+<p><strong>Choosing a date and gauging interest:</strong>
+Before even asking for funding, we wanted to know if there was enough interest to organise a symposium.
+So we reached out to our community <em>before beginning to organise</em> the symposium to gauge interest and spread the word.
+This allowed us to know what other events were going on in The Alan Turing Institute and research field so that we could avoid clashes or busy times of the year.</p>
+<p><strong>Eventbrite:</strong>
+After finding an available date for our interested participants, we chose to advertise our event on Eventbrite.
+At the time of running our event, we could host it for free for 30 participants.
+However, as of now (November 2023), Eventbrite only allows you to host your event for free with up to 25 participants, then it charges you.
+Some alternatives you may use could be <a class="reference external" href="https://humanitix.com/us/pricing">Humanitix</a>, <a class="reference external" href="https://lu.ma/">Lu.ma</a> or <a class="reference external" href="https://www.cvent.com/uk">eventsforce</a>.
+Because we were running a hybrid event, we created two event pages (one <a class="reference external" href="https://www.eventbrite.co.uk/e/in-person-data-hazards-ethics-and-reproducibility-one-day-symposium-tickets-516803953537">in-person</a> and one <a class="reference external" href="https://www.eventbrite.co.uk/e/online-data-hazards-ethics-and-reproducibility-one-day-symposium-tickets-517490858087?keep_tld=1">online-only</a>).
+Eventbrite worked well for us because:</p>
+<ul class="simple">
+<li><p>it could be accessed by everyone, not just those in our organisation.</p></li>
+<li><p>we could use it to gather participant information (clearly explaining why we were asking for the sensitive information and how the data would be handled), including accessibility information participants wanted to declare and dietary requirements.</p></li>
+</ul>
+<p><strong>Communications</strong>
+To make sure we kept attendees engaged and up to date, we emailed them before the event to:</p>
+<ul class="simple">
+<li><p>encourage those who could no longer attend to cancel their reserved slot so that someone else could attend in their place.</p></li>
+<li><p>provide a small nudge and reminder that the event was happening.</p></li>
+<li><p>provide participants a code of conduct and agenda in advance.</p></li>
+<li><p>provide a Zoom link for online participants (one-week in advance) and directions to the location of the symposium for those attending in-person.</p></li>
+</ul>
+<p>This is what a template email could look like:</p>
+<blockquote>
+<div><p>Dear Participants,
+Thank you for registering for the <em>(In person) Data Hazards, Ethics and Reproducibility One-Day Symposium</em>, on the <em>10th March 2023</em>.
+We hope you are as excited as we are about this symposium!</p>
+<p><strong>Checking in: can you still make it?</strong>
+We ask you to please be considerate and kindly let us know in advance if you can no longer make it to the event.
+This will help us reduce waste when ordering catering as well as help with organizing room numbers.
+Due to the high demand of this event, we have people in a waiting list, so please do cancel your ticket in advance if you cannot make it any more, in order to allow someone else to join instead.
+Please cancel directly through Eventbrite or by emailing the organisers.</p>
+<p><strong>Agenda</strong>:
+Please find the tentative agenda here (add your own link here). It is mostly set up by now, please keep your eyes open for final details in the coming days. We are looking forward to showcasing these wonderful people and talks.</p>
+<p><strong>Code of Conduct</strong>:
+We ask all attendees to familiarize themselves with the code of conduct for the event (add your own link here). Please do have a read in your own time in order to allow for an open and welcoming environment among all participants.</p>
+<p><strong>How to reach the Alan Turing Institute, Enigma room</strong>:
+Once you arrive to the main Alan Turing Reception area, there will be someone there to greet you and guide you towards the Enigma room.
+Instructions on how to get to the Turing Institute can be found here (add your own link here).</p>
+</div></blockquote>
+</section>
+<section id="collaboration">
+<span id="er-datahazardscasestudy-organising-collaboration"></span><h3>Collaboration:<a class="headerlink" href="#collaboration" title="Permalink to this headline">#</a></h3>
+<p>The DER symposium had two primary organisers, however it would not have been possible without the help of different collaborators.
+Here we discuss the steps we took to reach out to volunteers, symposium collaborators and speakers to help the event run smoothly.</p>
+<p><strong>Internal Teams</strong>
+We had several collaborators from within our <a class="reference external" href="https://www.turing.ac.uk/">organisation</a> including:</p>
+<ul class="simple">
+<li><p>the <strong>Skills Team</strong> who assisted us with:</p>
+<ul>
+<li><p>completing equity, diversity and inclusion assessment and data protection forms.</p></li>
+<li><p>understanding the financial requirements of the event, from paying speaker travel expenses to setting up a purchase order for an event caterer.</p></li>
+<li><p>providing grassroots funding to cover event expenses.</p></li>
+</ul>
+</li>
+<li><p>the <strong>Facilities Team</strong> who assisted with:</p>
+<ul>
+<li><p>delivery of the catering on the day.</p></li>
+<li><p>room bookings to host the event.</p></li>
+<li><p>microphone and audio-visual set-up for the room to host the hybrid event.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Volunteers</strong>
+Volunteers were an essential part of the day, and our event would not have been successful without their help!
+For clear communication with volunteers, we:</p>
+<ul class="simple">
+<li><p><strong>provided an availability form</strong> for volunteers to fill in, indicating specific sessions or hours they could help, what they would like to do, and their own accessibility requirements.</p></li>
+<li><p><strong>hosted an on-boarding call</strong> to talk through the agenda and highlight the parts of the day where we would require help from volunteers.</p></li>
+<li><p><strong>created a dedicated volunteer’s Slack channel</strong>, so that volunteers could ask questions relating to the event, and we could easily deal with any troubleshooting during the event.</p></li>
+<li><p><a class="reference external" href="https://hackmd.io/c2AnZHeRRtWaA_QRwobjsQ"><strong>created a final volunteer’s task form</strong></a>, so that all volunteers had been assigned tasks before the event began</p></li>
+</ul>
+</section>
+<section id="catering">
+<span id="er-datahazardscasestudy-organising-catering"></span><h3>Catering<a class="headerlink" href="#catering" title="Permalink to this headline">#</a></h3>
+<p>For our event we choose a local, entirely vegan caterer, to align with the core values of the event.
+To ensure successful ordering and delivery of the catering on the day we:</p>
+<ul class="simple">
+<li><p>estimated the number of attendees to provide catering - including volunteers, speakers and organisers.</p></li>
+<li><p>received a quote from the caterers in advance and ensured we had the budget to cover the quote.</p></li>
+<li><p>collected dietary requirements to ensure that all attendees were catered for, and ensured the catering company received these requirements in advance.</p></li>
+<li><p>arranged a delivery time and location.</p></li>
+<li><p>ensured payment to catering company as per company and organisation policies.</p></li>
+</ul>
+<p>Tip: make sure terms and conditions are read and timing requirements from different parties involved are clear from the beginning.
+It might be that the caterer you are ordering from requires a purchase order to be completed at a certain time to complete the order action.</p>
+</section>
+</section>
+<section id="hosting-the-event">
+<span id="er-datahazardscasestudy-hosting"></span><h2>Hosting the Event<a class="headerlink" href="#hosting-the-event" title="Permalink to this headline">#</a></h2>
+<p>There is already a chapter on <a class="reference internal" href="../../collaboration/organising-conference.html#cl-organising-conferences"><span class="std std-ref">Organising a Conference</span></a> which includes an in-depth dive into requirements for accessibility.
+Likewise, there is also a section for <a class="reference internal" href="../../communication/comms-overview/comms-overview-accessibly.html#cm-comms-overview-accessibly"><span class="std std-ref">Communicating Accessibly</span></a>.
+As well as on <a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-guidelines.html#cl-hybrid-collab-guidelines"><span class="std std-ref">Guidelines for Hybrid Collaboration</span></a>.</p>
+<p>From our experience, here are some extra tips on the day of the event.</p>
+<section id="starting-the-event">
+<span id="er-datahazardscasestudy-hosting-startingevent"></span><h3>Starting the Event<a class="headerlink" href="#starting-the-event" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>As the hosts arrive in-person at least 1 hour prior to start time to ensure the Zoom link and audio-visual equipment (speakers, screens and microphones) are all working.</p></li>
+<li><p>Open the online call early to allow for:</p>
+<ul>
+<li><p>volunteers to settle in and open any breakout-rooms.</p></li>
+<li><p>participants to join in advance and set-up break out rooms for networking events and workshops later in the day.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="hybrid-event-tips">
+<span id="er-datahazardscasestudy-hosting-hybridevent"></span><h3>Hybrid Event Tips<a class="headerlink" href="#hybrid-event-tips" title="Permalink to this headline">#</a></h3>
+<p>We chose to host the symposium in a hybrid format as this would allow attendance for those interested in the topic, and speakers who would be unable to attend in-person.</p>
+<p>There are a lot of tasks involved in running a hybrid event.
+Thanks to good communication with volunteers and preparing the room before the event, our hybrid format ran successfully without hiccups.
+Here we share some tips that helped us!</p>
+<p>To ensure a smooth hybrid event, we:</p>
+<ul class="simple">
+<li><p>tested the physical room audio-visual the day before and the day of the event, to ensure there were multiple microphones and the capability for live Zoom recordings.</p></li>
+<li><p>had in-person session chairs to introduce speakers and make sure people (both online and in-person) kept to agenda timings.</p></li>
+<li><p>made sure session chairs were aware of the hybrid set-up, including microphones, speakers and Zoom settings,</p></li>
+<li><p>made sure that there was always at least one person in the room who was comfortable with the hosting technology.</p></li>
+<li><p>set a non-disruptive 1min warning, using a 1min sign to hold up in-person, or type into the chat online, to signal the end of the talk.</p></li>
+<li><p>kept questions to the end of the talks to avoid disruptions and talks becoming longer.</p></li>
+<li><p>kept in contact with online hosts throughout the day to ensure both the presentations and the audio were working.</p></li>
+<li><p>had our online volunteers keep track of break-out rooms, host discussions, and keep track of questions for Q&amp;A sessions.</p></li>
+</ul>
+</section>
+<section id="accessibility">
+<span id="er-datahazardscasestudy-hosting-accessibility"></span><h3>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this headline">#</a></h3>
+<p>Below we provide some insight into what was important for us to consider during the event.</p>
+<p><strong>Code of Conduct</strong>
+We put together a code of conduct for the event that reflected our values and the values of the community we aimed to create during the symposium.
+It also summarised the expectations of participants joining the symposium and laid out reporting guidelines and contact points for if the code of conduct was breached during the event.</p>
+<p>Please find our code of conduct <a class="reference external" href="https://hackmd.io/&#64;7D_si7-qQwKdepUrj7_AzA/DER_CoC">here</a>.</p>
+<p>Additionally, overall, below we highlight some points that we actioned to ensure that the hybrid format and the event were accessible:</p>
+<ul class="simple">
+<li><p>collected accessibility requirements at the time of advertising, to help with planning.</p></li>
+<li><p>used <a class="reference external" href="https://otter.ai/">Otter.ai</a>, a speech-to-text transcription application using artificial intelligence and machine learning.
+It shows captions for live speakers and generates written transcriptions.
+Note: <a class="reference external" href="http://Otter.ai">Otter.ai</a> is not always sufficient as it has been trained on English and American accents, so further editing of subtitles or transcripts might be needed.</p></li>
+<li><p>ensured all participants in person were using microphones when speaking.
+Microphones can be helpful for all hearing requirements, both online and in-person (don’t assume everyone can hear equally).</p></li>
+<li><p>provided regular accessibility breaks.</p></li>
+<li><p>reminded all participants which sections of the day would be recorded.</p></li>
+<li><p>provided a space for participants to include their names and pronouns using name labels for in-person and Zoom names online.</p></li>
+<li><p>provided a code of conduct, and contact points for if the code of conduct was breached.</p></li>
+<li><p>used the raised-hand function in Zoom for direct questions, but included a session chair to monitor for questions in the chat.</p></li>
+</ul>
+</section>
+</section>
+<section id="hosting-a-workshop-data-hazards">
+<span id="er-datahazardscasestudy-hosting-workshop"></span><h2>Hosting a Workshop: Data Hazards<a class="headerlink" href="#hosting-a-workshop-data-hazards" title="Permalink to this headline">#</a></h2>
+<p>The Data Hazards workshop was a key part of the symposium.
+Participants engaged with a real-life research case study, presented by the researchers themselves, to evaluate the Data Hazards labels and which ones may apply.
+The researcher gave a five-minute presentation on whole-cell models of <em>E. coli</em>.
+Participants could then ask the researcher only factual questions about the project, for example, ‘where did you collect your data from?’.
+There was collaboration between attendees, volunteers and the researcher to discuss the ethical context of the project.
+We split the attendees into smaller groups to facilitate discussion and provide a series of prompt questions.
+Each group then labelled the research project with the hazards they thought applied.
+These were then fed back to the researcher for broader group discussions.
+Details of the workshop run on the day are available in the <a class="reference internal" href="#er-datahazardscasestudy-postevent-githubrepo"><span class="std std-ref">GitHub Repository</span></a>.</p>
+</section>
+<section id="post-event">
+<span id="er-datahazardscasestudy-postevent"></span><h2>Post Event<a class="headerlink" href="#post-event" title="Permalink to this headline">#</a></h2>
+<p>Once the event had finished we collected feedback from participants.
+Below we provide information on how we did this.</p>
+<section id="feedback-forms">
+<span id="er-datahazardscasestudy-postevent-feedbackforms"></span><h3>Feedback Forms<a class="headerlink" href="#feedback-forms" title="Permalink to this headline">#</a></h3>
+<p>To cover all avenues for feedback after the event we:</p>
+<ul class="simple">
+<li><p>provided a QR code and link to the feedback form in the final session of the day and encouraged participants to complete this form.</p></li>
+<li><p>emailed participants after the event to thank them for their attendance and share the feedback form again.</p></li>
+<li><p>collected slides and recordings from speakers.</p></li>
+<li><p>created a public Git repository where all content is openly available for attendees and those interested in organising and hosting a similar event.</p></li>
+</ul>
+<p>Feedback is really invaluable to ensure that future organisers can learn from previous events.
+In our case, this was our first symposium, so feedback from participants was really important!
+Here we provide some feedback we were given after the event.</p>
+<p><strong>Positive Feedback:</strong></p>
+<ul class="simple">
+<li><p>Attendees who came to the symposium with no experience of the data hazards enjoyed the interactive nature of the workshop, saying that: <em>‘the structure of the course made it very easy to follow, and the case study element was very interactive with lots of opportunities to ask questions.’</em></p></li>
+<li><p>Attendees also enjoyed the wide applications of data ethics and reproducibility in the research space.</p></li>
+<li><p>Attendees enjoyed networking over lunch, and our <a class="reference external" href="http://yellowkitchen.co.uk/">vegan catering</a> got lots of compliments!</p></li>
+</ul>
+<p><strong>Constructive Feedback:</strong></p>
+<ul class="simple">
+<li><p>Some attendees struggled with people joining and leaving parts of the online event but recognised this was out of the organiser’s control.</p></li>
+<li><p>A consideration for future events would be to create initiatives to encourage people to stay online for the whole day.</p></li>
+<li><p>Attendees felt that an additional industry perspective would have been beneficial.</p></li>
+</ul>
+</section>
+<section id="github-repository">
+<span id="er-datahazardscasestudy-postevent-githubrepo"></span><h3>GitHub Repository<a class="headerlink" href="#github-repository" title="Permalink to this headline">#</a></h3>
+<p>To embody the topics of reproducibility and open science, we have shared symposium content on a public GitHub repository.
+The aim of this is to help anyone who wants to run a workshop or symposium in the future consider the different elements of event organisation and hosting.</p>
+<p>Find our full GitHub repository, including recordings of speakers, code of conduct, and forms <a class="reference external" href="https://github.com/Susana465/der_symposium_20230310">here</a>.</p>
+</section>
+</section>
+<section id="challenges">
+<span id="er-datahazardscasestudy-challenges"></span><h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">#</a></h2>
+<p>As this was the first event (on this scale!) that we had organised, there were several challenges that popped up throughout the process.</p>
+<p>The primary challenge was understanding the number of hours required to organise an event.
+This event took over 50 hours of organisational time over a period of three months, from requesting funding, form writing, code of conduct, creating the event page, advertisement, organising catering and so on.
+If this is the first time you are organising an event, different tasks may take longer than expected to complete.
+We would recommend you establish a large organising committee of passionate people, to work together and split tasks efficiently.<br />
+It is also important to recognise the boundaries and constraints of how long you are willing to spend organising an event.
+Don’t let perfection be the enemy of good!
+This also taught us that organising an event will <strong>always</strong> take longer than you expect, so plan accordingly!</p>
+</section>
+<section id="reflections">
+<span id="er-datahazardscasestudy-reflections"></span><h2>Reflections<a class="headerlink" href="#reflections" title="Permalink to this headline">#</a></h2>
+<p>After the event, we realised that it is important to understand your organisation’s guidelines and frameworks for hosting events, what support they can offer you, and reach out to ask for help where you need it.</p>
+<p>In our experience organising and hosting an event was both stressful and fun!</p>
+<p>Hosting a hybrid event was challenging and required extra organisation and volunteers.
+But after all the effort we put into it, it ran smoothly and we were very proud to have both online and in-person attendance.</p>
+<p>We also recognise the importance of <a class="reference internal" href="../self-reflection.html#er-self-reflection"><span class="std std-ref">self reflection</span></a> throughout the process of organising an event, and how our lived experiences gave us a particular lens on how we view the world.
+So ensuring we collaborated with others, and took on different points of view ensured a responsible, inclusive, and fair event!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ethical-research/data-hazards"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="dh-how-to-use.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">How to use the Data Hazards project</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../ethics-open-source-governance.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ethical Considerations when Choosing an Open Source Governance Model</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#der-symposium-goals">DER Symposium Goals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organising-the-event">Organising the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-agenda">Creating an Agenda:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advertising-the-event">Advertising the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">Collaboration:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catering">Catering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-event">Hosting the Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-event">Starting the Event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-event-tips">Hybrid Event Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-a-workshop-data-hazards">Hosting a Workshop: Data Hazards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-event">Post Event</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-forms">Feedback Forms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">GitHub Repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflections">Reflections</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Turing Way Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Turing Way Community makes all of their materials publicly available under  <a href="https://github.com/the-turing-way/the-turing-way/blob/main/LICENSE.md">open source licenses</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
