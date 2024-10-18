@@ -1,4 +1,5 @@
 # Advanced Structure for Data Analysis
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 ## Prerequisites/Recommended Skill Level
 

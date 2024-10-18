@@ -1,5 +1,10 @@
 (rr)=
 # Guide for Reproducible Research
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 ***This guide covers topics related to skills, tools and best practices for research reproducibility.***
 

@@ -1,5 +1,6 @@
 (cm-social-media)=
 # Social Media for Research Communications
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 There are billions of users of social media around the world.
 It is now common practice for the researcher to advertise their work on social media or other internet-based communication platforms.

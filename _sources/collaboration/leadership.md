@@ -1,5 +1,6 @@
 (cl-leadership)=
 # Open Leadership in Data Science
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 ## Overview
 

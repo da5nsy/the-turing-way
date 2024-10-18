@@ -1,5 +1,6 @@
 (rr-code-reuse-recommendations)=
 # Overview of Code Reuse
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 This section contains a checklist of recommendations for making your software more reusable.
 The {ref}`rr-code-reuse-details` section contains a more in-depth explanation of each of these recommendations.

@@ -1,5 +1,6 @@
 (cm-presentations)=
 # Presenting Posters and Conference Talks
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 Much like writing lay summaries and blogs, presentation of your work at conferences that are not within your immediate research environment need to be carefully thought through.
 

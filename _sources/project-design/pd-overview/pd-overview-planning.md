@@ -1,5 +1,6 @@
 (pd-overview-planning)=
 # Getting Started with Project Design
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 Thinking about reproducibility from the start of your project is the best way to save time and get the most out of the available tools. 
 Creating connections between data, code, methodology, as well as diverse collaborators, can seem like a daunting task if it has not been planned from the beginning (see this illustration of the {ref}`Research Cycle<research-cycle>`). 

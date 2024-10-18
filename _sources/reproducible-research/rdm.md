@@ -1,5 +1,6 @@
 (rr-rdm)=
 # Research Data Management
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 (rr-rdm-prerequisites)=
 ## Prerequisites

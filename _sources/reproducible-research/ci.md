@@ -1,5 +1,6 @@
 (rr-ci)=
 # Continuous integration
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 | Prerequisite | Importance | Notes |
 | -------------|------------|-------|

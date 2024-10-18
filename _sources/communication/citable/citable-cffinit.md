@@ -1,5 +1,6 @@
 (cm-citable-cffinit)=
 # Create a `CITATION.cff` using `cffinit`
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 `cffinit` is a web application which helps users create a `CITATION.cff` file.
 The application provides guidance for each field of the [CFF schema](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md) and does the validation automatically.

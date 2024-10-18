@@ -1,5 +1,6 @@
 (cm-comms-overview)=
 # Overview of the Guide for Communication
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 Research projects, publications and communities are evaluated based on the impact that they make.
 This is often based on academic journal articles, generally published on completion of a project.

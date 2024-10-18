@@ -1,5 +1,6 @@
 (cm-citable-orcid)=
 # ORCID to Collect your Research Objects
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 You can use ORCID to access or sign up to services that utilise ORCID, for example, publisher requirements, funding management portals ([ResearchFish](https://researchfish.com/)), the [CRIS (current research information system)](https://en.wikipedia.org/wiki/Current_research_information_system) at your institute and data repository like [Zenodo](https://zenodo.org).
 

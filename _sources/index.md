@@ -34,6 +34,61 @@ You can explore different opportunities to get involved on the [start page](http
 Join [our Slack Workspace](https://join.slack.com/t/theturingway/shared_invite/zt-fn608gvb-h_ZSpoA29cCdUwR~TIqpBw) to connect and discuss your ideas and [subscribe to our newsletter](https://buttondown.email/turingway) to follow updates from our community.
 
 ## Different Pathways
+:::{panels}
+:container: +full-width
+:column: col-lg-6 px-2 py-2
+:header: text-center bg-white
+:card: text-left shadow
+:footer: text-left
+```{link-button} ./early-career-researchers.html
+:text: Early Career Researchers
+:classes: bg-info text-white text-center font-weight-bold
+```
+^^^
+- [](project-design/project-design)
+- [](collaboration/github-novice)
+- [](project-design/project-repo)
+
+And more... 
+
+---
+```{link-button} ./project-leaders.html
+:text: Project Leaders
+:classes: bg-info text-white text-center font-weight-bold
+```
+^^^
+- [](collaboration/leadership)
+- [](project-design/project-design)
+- [](project-design/project-repo)
+
+And more... 
+
+---
+```{link-button} ./research-software-engineers.html
+:text: Research Software Engineers
+:classes: bg-info text-white text-center font-weight-bold
+```
+^^^
+- [](communication/citable/citable-cite)
+- [](collaboration/research-infrastructure-roles/rse)
+- [](collaboration/research-infrastructure-roles/rse-personal-story)
+
+And more... 
+
+---
+```{link-button} ./software-citation.html
+:text: Software Citation
+:classes: bg-info text-white text-center font-weight-bold
+```
+^^^
+- [](communication/citable/citable-steps)
+- [](communication/citable/citable-cite)
+- [](communication/citable/citable-cff)
+
+And more... 
+
+::: 
+
 
 (welcome-community)=
 ## Our Community

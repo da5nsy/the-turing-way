@@ -1,5 +1,6 @@
 (cm-citable-cff)=
 # Software Citation with CITATION.cff
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 The [Citation File Format](https://citation-file-format.github.io) lets you provide citation metadata, for software or datasets, in plaintext files that are easy to read by both humans and machines.
 

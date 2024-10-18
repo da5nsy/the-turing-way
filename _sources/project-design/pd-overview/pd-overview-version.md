@@ -1,5 +1,6 @@
 (pd-overview-version)=
 # Version Control and Documentation
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 Once the project is designed, it is important to keep track of all the changes.
 This will save you a lot of time and can help others understand and reuse your research - you have a record of what worked best and information to understand why.

@@ -1,5 +1,6 @@
 (rr-overview-benefits)=
 # Added Advantages
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 In the {ref}`rr-overview-definitions` section, we discussed the different aspects of reproducible research that are beneficial for the scientific community.
 In this chapter, we will share some less obvious aspects of working reproducibly for individual researchers and teams.

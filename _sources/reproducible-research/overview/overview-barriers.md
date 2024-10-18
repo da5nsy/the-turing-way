@@ -1,5 +1,7 @@
 (rr-overview-barriers)=
 # Barriers to reproducibility
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 So far we have explained {ref}`what we mean<rr-overview-definitions>` by reproducible research and explained some of the {ref}`additional benefits<rr-overview-benefits>`.
 

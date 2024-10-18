@@ -1,5 +1,6 @@
 (cl-infrastructure-rse-personal-story)=
 # Research Software Engineering Personal Story
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 ## Introduction
 

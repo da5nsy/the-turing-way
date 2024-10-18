@@ -1,5 +1,6 @@
 (cm-citable-checklist)=
 # Checklists and Resources
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 (cm-citable-checklist-authors)=
 ## Checklist For Authors

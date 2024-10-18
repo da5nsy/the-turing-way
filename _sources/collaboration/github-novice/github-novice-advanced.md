@@ -1,5 +1,6 @@
 (cl-github-novice-advanced)=
 # Advanced GitHub features
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 ## More collaboration
 GitHub makes it easy to collaborate and create and manage teams.
 You can add collaborators to your organization or project and manage permissions using the Teams settings.

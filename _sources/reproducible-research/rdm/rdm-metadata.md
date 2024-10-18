@@ -1,5 +1,6 @@
 (rr-rdm-metadata)=
 # Documentation and Metadata
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 Having data available is of no use if it cannot be understood. Without metadata to provide provenance and context, the data can't be used effectively.
 For example, a table of numbers is useless if no headings describe what the columns/rows contain.

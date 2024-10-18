@@ -1,5 +1,7 @@
 (pd)=
 # Guide for Project Design
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 ***This guide covers topics related to effective project planning and management.***
 

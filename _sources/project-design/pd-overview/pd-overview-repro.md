@@ -1,5 +1,6 @@
 (pd-overview-repro)=
 # Collaborative project documentation
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 Good communication and collaboration practices are complementary to research reproducibility, and often it is hard to separate these concepts from each other.
 In _The Turing Way_, we consider these essential for reproducible research and provide separate guides for {ref}`communication<cm>` and {ref}`collaboration<cl>`.

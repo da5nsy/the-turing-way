@@ -1,6 +1,7 @@
 (cm-citable-linking)=
 
 # Linking Research Objects
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 Linking your data, code and article will ensure that you receive **credit** for your work and it will increase the visibility of your research outputs.
 There are several different ways to do this.

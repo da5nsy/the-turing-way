@@ -1,5 +1,6 @@
 (rr-rdm-sharing)=
 # Sharing and Archiving Data
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 (rr-rdm-sharing-motivations)=
 ##  Motivations For Sharing Data

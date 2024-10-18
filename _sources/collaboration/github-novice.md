@@ -1,5 +1,6 @@
 (cl-github-novice)=
 # Getting Started With GitHub
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 
 ## Prerequisites
 

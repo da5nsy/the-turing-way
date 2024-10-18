@@ -1,5 +1,6 @@
 (cm-citable-steps)=
 # Steps for Making Research Objects Citable
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 
 There are many reasons why authors don't cite the data, protocols, software and hardware that they use, but one of the biggest ones is that it's not clear how.
 You can go a long way to reducing this barrier by following a few steps to make it as easy as possible.

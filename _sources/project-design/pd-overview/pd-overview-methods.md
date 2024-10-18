@@ -1,5 +1,7 @@
 (pd-overview-methods)=
 # Reproducibility Methods
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
 
 Designing a project starts by defining your research question and the methodology that will be used to answer this question.
 When thinking about the methodology is necessary to think about how to make your research {ref}`open<rr-open>` and {ref}`reproducible<rr-overview>`:

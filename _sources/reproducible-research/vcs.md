@@ -1,5 +1,7 @@
 (rr-vcs)=
 # Version Control
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 (rr-vcs-prerequisites)=
 ## Prerequisites

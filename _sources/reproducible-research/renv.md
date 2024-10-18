@@ -1,5 +1,6 @@
 (rr-renv)=
 # Reproducible Environments
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 (rr-renv-prerequisites)=
 ## Prerequisites

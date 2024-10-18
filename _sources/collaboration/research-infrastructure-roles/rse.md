@@ -1,5 +1,6 @@
 (cl-infrastructure-rse)=
 # Research Software Engineer: Overview
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 Research Software Engineers (RSEs) are programmers with scientific backgrounds who play increasingly critical roles in the conduct of research and production of research software tools. 
 They are highly skilled team members who can also conduct their own research as part of their role. 

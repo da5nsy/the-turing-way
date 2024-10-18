@@ -1,5 +1,6 @@
 (rr-code-reuse)=
 # Reusable Code
+[![](https://img.shields.io/static/v1?label=pathway&message=Software%20Citation&color=green)](/software-citation.md)
 Your software project could range from a small script you use for data processing to a notebook used for data analysis, or a software library implementing your algorithms.
 Regardless of how big or small your software project is, it is important to make your code reusable.
 

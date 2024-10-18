@@ -1,5 +1,6 @@
 ﻿(rr-overview-resources)=
 # Resources
+[![](https://img.shields.io/static/v1?label=pathway&message=Early%20Career%20Researchers&color=blue)](/early-career-researchers.md)
 For additional resources like videos and reference papers on reproducibility, see the {ref}`rr-overview-resources-reading` and {ref}`rr-overview-resources-addmaterial` sections.
 
 (rr-overview-resources-learn)=

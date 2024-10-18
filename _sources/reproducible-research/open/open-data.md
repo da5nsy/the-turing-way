@@ -1,5 +1,7 @@
 (rr-open-data)=
 # Open Data
+[![](https://img.shields.io/static/v1?label=pathway&message=Project%20Leaders&color=purple)](/project-leaders.md)
+[![](https://img.shields.io/static/v1?label=pathway&message=Research%20Software%20Engineers&color=white)](/research-software-engineers.md)
 
 The world is witnessing a significant global transformation, facilitated by technology and digital media, and fuelled by data and information.
 This transformation has enormous potential to foster more transparent, accountable, efficient, responsive, and effective research.
