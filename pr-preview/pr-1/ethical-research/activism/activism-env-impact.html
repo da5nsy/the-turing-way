@@ -1,0 +1,1325 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The Environmental Impact of Digital Research &#8212; The Turing Way</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/script.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ethical-research/activism/activism-env-impact';</script>
+    <link rel="canonical" href="https://book.the-turing-way.org/ethical-research/activism/activism-env-impact.html" />
+    <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Case Study: Tackling Robodebt" href="activism-robodebt.html" />
+    <link rel="prev" title="Cultural Change" href="activism-cultural-change.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠️<i>The Turing Way</i> is moving domain! We will soon move to <a href='https://book.the-turing-way.org'>book.the-turing-way.org</a>. You can use new domain now! Later, the old domain will redirect you to the new location.</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo-detail-with-text.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo-detail-with-text.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../foreword/foreword.html">Foreword</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/navigate.html">Navigating the Handbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/emergent-strategy.html">Emergence as The Turing Way Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/embracing-digital-commons.html">Embracing the Principles of Digital Commons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/community.html">Community and Community Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/governance.html">Governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/cite.html">How to Cite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foreword/faqs.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../reproducible-research/reproducible-research.html">Guide for Reproducible Research</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-definitions.html">Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-benefit.html">Added Advantages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-barriers.html">Barriers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/overview/overview-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/open.html">Open Research</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-data.html">Open Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-source.html">Open Source Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-hardware.html">Open Source Hardware</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-access.html">Open Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-notebooks.html">Open Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-scholarship.html">Open Scholarship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/open/open-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/vcs.html">Version Control</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow.html">Version Control Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-workflow-branches.html">Version Control and Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-general.html">The Git Version Control Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-in-research.html">Git for Research Projects</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git.html">Git Using the Command Line</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-commit.html">Git Commit Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-compare.html">Retrieving and Comparing Versions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-branches.html">Git Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-merge.html">Merging Branches in Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-interactive.html">Interactive, Visual Git</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-github.html">Git Commands to Work on GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/vcs/vcs-git-summary.html">Summary Table of Git Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-data.html">Version Control for Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-personal-stories.html">Personal Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-checklist.html">Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/vcs/vcs-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/licensing.html">Licensing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-compatibility.html">License Compatibililty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ethical-source.html">Ethics-informed Licensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-data.html">Data Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-hardware.html">Hardware Licenses</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml.html">Machine Learning Model Licenses</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../reproducible-research/licensing/licensing-ml-case-studies.html">Case Studies: Choosing an ML License</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/licensing/licensing-checklist.html">Checklist</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/rdm.html">Research Data Management</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data.html">Research Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-find.html">Finding Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-dmp.html">Data Management Plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-fair.html">The FAIR Principles and Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-personal.html">Personal data management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-storage.html">Data Storage and Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-spreadsheets.html">Data Organisation in Spreadsheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-metadata.html">Documentation and Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-methods.html">Methods and Protocols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-elns.html">Electronic Lab Notebooks (ELNs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-data-curation.html">Data Curation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-visualisation.html">Data Visualisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-repository.html">Data Repositories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-sharing.html">Sharing and Archiving Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-article.html">Data Article</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-checklist.html">Checklist</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-stories.html">Personal Impact Stories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/rdm/rdm-resources.html">Resources</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/renv.html">Reproducible Environments</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-options.html">Capturing Computational Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-package.html">Package Management Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-yaml.html">YAML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-virtualmachine.html">Virtual Machines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-containers.html">Containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/renv/renv-resources.html">Resources and Checklist</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/binderhub.html">BinderHub</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-introduction.html">Introduction to BinderHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-compute.html">Compute Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-build.html">Build Your Own BinderHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/binderhub/binderhub-resources.html">Resources for BinderHub</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/code-quality.html">Code quality</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-style.html">Code Style and Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-robust.html">Writing Robust Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-quality/code-quality-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/testing.html">Code Testing</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-guidance.html">General Guidance for Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-overview.html">Overview of Testing Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-smoketest.html">Smoke Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-unittest.html">Unit Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-integrationtest.html">Integration Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-systemtest.html">System Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-acceptance-regression.html">Acceptance and Regression Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-runtime.html">Runtime Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-driven-development.html">Test Driven Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-exceptions.html">Challenges and Exceptional Cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-checklist.html">Checklist for Code Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/testing/testing-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/reviewing.html">Code Reviewing Process</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-motivation.html">Motivation for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-recommend.html">Recommendations for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-workflow.html">Code review workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-checklist.html">Checklist for code reviewing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/reviewing/reviewing-resources.html">Resources for code reviewing</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/code-reuse.html">Reusable Code</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-reuse/code-reuse-overview.html">Overview of Code Reuse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/code-reuse/code-reuse-details.html">Detailed Recommendations for Code Reuse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/ci.html">Continuous Integration (CI)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-options.html">Intro to Continuous integration (CI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-github-actions.html">Getting started with GitHub actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-building-gh-actions.html">Building a Block of a GitHub actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-practices.html">Best practices and recommendations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/ci/ci-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/make.html">Reproducible Research with Make</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-examples.html">Learn "Make" by examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-debugging.html">Debugging Makefiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-casestudy.html">Case Study of a Reproducible Paper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-results.html">Including numerical results and tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-resources.html">Resources for "Make"</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/make/make-appendix.html">Appendix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../reproducible-research/compendia.html">Research Compendia</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/risk-assess.html">Risk Assessment</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/risk-assess/risk-assess-impact.html">Complexity and Impact of Risk Assessment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/risk-assess/risk-assess-resources.html">Summary of Risk Assessment</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../reproducible-research/case-studies.html">Case Studies</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../reproducible-research/case-studies/case-study-statistical.html">A Statistical Methods Manuscript</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../project-design/project-design.html">Guide for Project Design</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/pd-overview.html">Overview of Project Design</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-planning.html">Planning for Project Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-repro.html">Collaborative project documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-methods.html">Reproducibility Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-version.html">Version Control and Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/pd-overview/pd-overview-sharing.html">Sharing Your Research Work</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../project-design/pd-checklist.html">Project Design Checklist</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/project-repo.html">Creating Project Repositories</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-readme.html">Landing Page - README File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-roadmapping.html">Roadmapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-contributors.html">Contributors and Communication Pathways</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-participation.html">Participation Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-advanced.html">Advanced Structure for Data Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/project-repo/project-repo-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/persona.html">Personas and Pathways</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/persona/persona-creation.html">Persona Creation Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/persona/persona-contributors.html">Contributor Pathways</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../project-design/filenaming.html">File Naming Convention</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/code-styling.html">Code Styling and Linting</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-guidelines.html">Guidelines for Code Styling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-readability.html">Writing Human Readable Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/code-styling/code-styling-tools.html">Code Styling Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdp.html">Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/types.html">Types of Sensitive Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/personal.html">Personal Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/confidential.html">Confidential Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/biological.html">Biological Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/metadata.html">Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdp/combined.html">Combined Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdpm.html">Managing Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/informed.html">Informed consent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/data-privacy-strategies.html">Data Privacy Strategies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/sharing-sensitive-data.html">Sharing Sensitive Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpm/resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/sdpw.html">Working on Sensitive Data Projects</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/trew.html">Working with Trusted Research Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-private-learning.html">Privacy Preserving Machine Learning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-sensitive-files.html">Keeping Sensitive Files Secure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-sensitive-code.html">Sharing Your Jupyter Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-exposing-data.html">Removing Sensitive Data From GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/sdpw/pd-sdp-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/data-governance.html">Data Governance</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/data-governance/data-gov-ml.html">Data Governance for the Machine Learning Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/data-governance/bigcode_casestudy.html">BigCode Data Governance Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/missing-data.html">Missing Data Handling</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-structures.html">Missing Data Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-visualising-missingness.html">Visualising Missingness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-methods.html">Missing Data Handling Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-structured-missingness.html">Structured Missingness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/missing-data/missing-data-checklist-resources.html">Checklist and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../project-design/risks-of-bias.html">Risks of Bias in Research</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/identifying-risks-of-bias.html">Identifying Risks of Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/confounding-variables.html">Confounding Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/validation-generalisability.html">Validation and Generalisability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../project-design/risks-of-bias/discrimination-bias.html">Discrimination and Bias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../communication/communication.html">Guide for Communication</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-31"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/comms-overview.html">Overview of Guide for Communication</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-32"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-principles.html">Principles of Communicating with Wider Audiences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-accessibly.html">Communicating Accessibly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/comms-overview/comms-overview-resources.html">Resources and Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/open.html">Open Scholarship</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-33"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/open/education.html">Open Education</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/blogs.html">Blogs for Research Communication</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-34"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/blogs/blogs-webpage.html">Building a Webpage for Blogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/blogs/blogs-personal-stories.html">Personal stories - Blogs</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/lay-summaries.html">Lay Summaries</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-35"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/lay-summaries/lay-summaries-personal-stories.html">Personal Stories - Lay summaries</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/podcasts.html">Podcasts for Research Communication</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-36"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/podcasts/podcasts-personal-stories.html">Personal Stories - Podcasts</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/presentations.html">Presenting Posters and Conference Talks</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-37"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/presentations/presentations-remote.html">Presenting at Remote Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/presentations/presentations-personal-stories.html">Personal stories - Presenting Outside of Your Discipline</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/social-media.html">Social Media for Research Communications</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-38"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/social-media/social-media-twitter-tips.html">Tips for starting with X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/social-media/social-media-twitter-multiple.html">Managing multiple X accounts</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/research-objects.html">Research Objects in Action</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-39"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/research-objects/ro-concepts.html">Lifecycle</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/research-objects/ro-implementation.html">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/citable.html">Making Research Objects Citable</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-40"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-steps.html">Steps for Making Research Objects Citable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cite.html">Citing Research Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cff.html">Software citation with CITATION.cff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-cffinit.html">Create a CITATION.cff using CFFinit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-linking.html">Linking Research Objects</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-orcid.html">ORCID to Collect your Research Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/citable/citable-resources.html">Checklists and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/dif-articles.html">Publishing Different Article Types</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-41"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/data.html">Data Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/methods.html">Methods Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/micro.html">Micropublishing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/reg.html">Registered Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/dif-articles/software.html">Software Papers</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/os-comms.html">Communications in Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-42"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/os-comms/os-comms-issue-tracking.html">Issue Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/os-comms/os-comms-channels.html">Communication Channels</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/aa.html">Authorship and Contributions on Academic Articles</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-overview.html">Overview of Academic Authorship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-misconduct.html">Types of Authorship Misconduct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-traditions.html">Discipline Specific Authorship Traditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-equitable.html">Large and Equitable Authorships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-tips.html">Tips on How to Get Authorship Right</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-stories-interdisciplinary.html">Personal Stories - Authorship on Interdisciplinary Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-stories-community.html">Personal Stories - Large Collaborative Research Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/aa/aa-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/peer-review.html">Peer Review</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-44"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-overview.html">Peer Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-open.html">Open Peer Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-guidance.html">Guidance on Peer Review for a Journal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-code.html">Guidance on Code Review</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../communication/peer-review/peer-review-resources.html">Resources</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../communication/binder.html">Binder</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-45"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../communication/binder/zero-to-binder.html">Zero-to-Binder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../collaboration/collaboration.html">Guide for Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-46"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/github-novice.html">Getting Started With GitHub</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-47"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-motivation.html">Motivation for Using GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-firststeps.html">First steps on GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-features.html">Using more GitHub features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/github-novice/github-novice-advanced.html">Advanced GitHub features</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/maintain-review.html">Maintainers and Reviewers on GitHub</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-48"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-maintenance.html">Project Maintenance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-permissions.html">Ownership and Permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-review.html">Reviewing Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-merge.html">Merging Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/maintain-review/maintain-review-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/organising-meetings.html">Organising Meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/coworking.html">Organising Online Coworking Calls</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/organising-conference.html">Organising Conferences</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-49"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/organising-conference/reg-forms.html">Registration Forms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/organising-conference/reg-form-template.html">Template for Registration Form</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/chairing.html">Chairing Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/event-participation.html">Participating in Events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/ppie-events.html">Hosting Events with Public Contributors</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-50"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-planning.html">Planning your PPIE Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-location.html">Location and Venue Planning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-schedules.html">Scheduling and Agenda Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-comms.html">Communication Strategy and Planning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-socials.html">Inclusive Social and Networking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-tech.html">Technology Considerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ppie-events/ppie-events-resources.html">Additional Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/informal-chats.html">Informal Coffee Chats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/event-tools.html">Tools for Facilitating Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../collaboration/stakeholder-engagement.html">Facilitating Stakeholder Engagement</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/new-community.html">Managing a New Community and Team</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-51"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-guide.html">Guide to Planning a Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-techissues.html">Addressing Technical Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-differences.html">Valuing Diversity and Differences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/new-community/new-community-teamwork.html">Teamwork</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/academic-industry.html">Academic-Industry Collaborations</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-52"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/academic-industry/academic-industry-establish.html">Establishing an Academic-Industry Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/academic-industry/academic-industry-community.html">Community Building in an Academic-Industry Collaboration</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../collaboration/academic-industry/intro-case-studies-and-best-practices-in-academic-industry-collaboration.html">Case Studies and Best Practices in Academic-Industry Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-53"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../collaboration/academic-industry/case-study-library.html">Case Study Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collaboration/academic-industry/online-resources-best-practices.html">Online Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/ambassador-schemes.html">Ambassador Schemes</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-54"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ambassador-schemes/ambassador-schemes-establish.html">Establishing and Running an Ambassador Scheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/ambassador-schemes/ambassador-schemes-personal-story.html">Turing-Roche Community Scholar Scheme Personal Story</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/team-manual.html">Team Manual</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-55"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/team-manual/team-manual-on-off-boarding.html">On and Offboarding Team Members</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/leadership.html">Open Leadership in Data Science</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-56"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-features.html">Important Features of Leadership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-building.html">Building Healthy Leadership Skills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-opportunities.html">Creating Leadership Opportunities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-story-hackathon.html">Personal Story from Running a Hackathon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/leadership/leadership-story-data-librarian.html">Personal Story of Leadership by a Data Librarian</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/research-infrastructure-roles.html">Research Infrastructure Roles</a><input class="toctree-checkbox" id="toctree-checkbox-57" name="toctree-checkbox-57" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-57"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/community-manager.html">Community Managers Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-steward.html">Data Stewards Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-steward-personal-story.html">Data Steward Personal Story</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/data-wrangler.html">Data Wrangler Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/rse.html">Research Software Engineers Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/rse-personal-story.html">Research Software Engineering Personal Story</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/ram.html">Research Application Manager Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/research-infrastructure-roles/research-infrastructure-developer.html">Research Infrastructure Developer Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/remote-collab.html">Remote Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-58" name="toctree-checkbox-58" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-58"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-prosandcons.html">Pros and Cons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-guidelines.html">Guidelines for Remote Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-team.html">Managing Distributed Teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/remote-collab/remote-collab-useful-resources.html">Useful Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/hybrid-collab.html">Hybrid Collaboration</a><input class="toctree-checkbox" id="toctree-checkbox-59" name="toctree-checkbox-59" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-59"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-challenges.html">Challenges faced during Hybrid Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-guidelines.html">Guidelines for Hybrid Collaboration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/hybrid-collab/hybrid-collab-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/shared-ownership.html">Shared Ownership in Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-60" name="toctree-checkbox-60" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-60"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-projects.html">Project Ownership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-models.html">Shared Ownership Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-challenges.html">Challenges with Applying Ownership Models Retroactively</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/shared-ownership/shared-ownership-defaults.html">Nudging for a Better Default</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collaboration/oss-sustainability/oss-sustainability-challenges.html">Sustainability of Open Source Projects</a><input class="toctree-checkbox" id="toctree-checkbox-61" name="toctree-checkbox-61" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-61"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../collaboration/oss-sustainability/oss-sustainability-examples.html">Examples of Open Source Business Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../ethical-research.html">Guide for Ethical Research</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-62" name="toctree-checkbox-62" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-62"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ethics-intro.html">Introduction to Research Ethics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ethics-committees.html">Research Ethics Committees Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preclinical-research.html">Ethical Decisions in Preclinical Research</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../law-policy.html">Law, Policy and Human Rights in Ethics</a><input class="toctree-checkbox" id="toctree-checkbox-63" name="toctree-checkbox-63" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-63"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-ethics.html">Ethics and law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-rights.html">Human rights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law-policy/law-policy-resources.html">Further Recommendations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../social-data.html">Research Ethics for Social Data</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data-feminism.html">Data Feminism</a><input class="toctree-checkbox" id="toctree-checkbox-64" name="toctree-checkbox-64" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-64"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data-feminism/data-feminism-power.html">Examining Power</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../activism.html">Activism for Researchers</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-65" name="toctree-checkbox-65" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-65"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="activism-unionisation.html">Unionisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activism-whistleblowing.html">Whistleblowing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activism-cultural-change.html">Cultural change</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">The Environmental Impact of Digital Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activism-robodebt.html">Case study - Robodebt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activism-case-study-google.html">Case study - Google Workers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../internal-policy.html">Internal Policy Advocacy</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../self-reflection.html">Self-Reflection</a><input class="toctree-checkbox" id="toctree-checkbox-66" name="toctree-checkbox-66" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-66"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-positionality.html">Identity and Positionality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-power.html">Power and Privilege</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-prompts.html">Self-Reflection Prompts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../self-reflection/sr-resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../data-hazards.html">Data-Hazards</a><input class="toctree-checkbox" id="toctree-checkbox-67" name="toctree-checkbox-67" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-67"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../data-hazards/dh-intro.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data-hazards/dh-how-to-use.html">How To Use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../data-hazards/dh-case-study.html">Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ethics-open-source-governance.html">Ethical Considerations for Open Source Governance Models</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../community-handbook/community-handbook.html">Community Handbook</a><input class="toctree-checkbox" id="toctree-checkbox-68" name="toctree-checkbox-68" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-68"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/coc.html">Code of Conduct</a><input class="toctree-checkbox" id="toctree-checkbox-69" name="toctree-checkbox-69" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-69"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-details.html">Code of Conduct in Detail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-reporting.html">Incident Reporting Guideline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-enforcement.html">Enforcement Manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coc/coc-acknowledgement.html">Acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/style.html">Style Guide</a><input class="toctree-checkbox" id="toctree-checkbox-70" name="toctree-checkbox-70" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-70"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-citing.html">Citing and Referencing External Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-crossref.html">Cross-Referencing Sections and Chapters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-figures.html">Using Figures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-more-styling.html">Glossary, Special Blocks and More Styling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/style/style-custom-styling.html">Custom Styling</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/consistency.html">Maintaining Consistency</a><input class="toctree-checkbox" id="toctree-checkbox-71" name="toctree-checkbox-71" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-71"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-formatting.html">Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-structure.html">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/consistency/consistency-language.html">Language</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../community-handbook/local-build.html">Build the Turing Way Book locally</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/contributing.html">Contributing and Developing Chapters - Templates and Workflow</a><input class="toctree-checkbox" id="toctree-checkbox-72" name="toctree-checkbox-72" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-72"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/contributing/contributing-templates.html">Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/contributing/contributing-workflow.html">Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/acknowledgement.html">Acknowledging Contributors</a><input class="toctree-checkbox" id="toctree-checkbox-73" name="toctree-checkbox-73" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-73"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-members.html">Community Members and Shared Ownership</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-record.html">Record of Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/acknowledgement/acknowledgement-examples.html">Different Contributions and Acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/translation.html">Translation and Localisation</a><input class="toctree-checkbox" id="toctree-checkbox-74" name="toctree-checkbox-74" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-74"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-localisation.html">Translation of Open Source Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-workflow.html">Welcome to the Translation and Localisation Team of <em>The Turing Way</em>!</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-getting-started.html">Embark on Your Localisation Journey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/translation/translation-hello-crowdin.html">Your Gateway to Crowdsourced Localisation</a></li>
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/infrastructure.html">Infrastructure</a><input class="toctree-checkbox" id="toctree-checkbox-75" name="toctree-checkbox-75" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-75"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-contributors.html">Publishing Contributors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-external-link-check.html">External Link Checking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/infrastructure/infrastructure-dns.html">DNS</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/accessibility.html">Accessibility</a><input class="toctree-checkbox" id="toctree-checkbox-76" name="toctree-checkbox-76" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-76"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/accessibility/event-organising.html">Event Organising</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/accessibility/alt-text.html">Alt text</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/communication-channels.html">Communication Platforms</a><input class="toctree-checkbox" id="toctree-checkbox-77" name="toctree-checkbox-77" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-77"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/communication-channels/slack-start-guide.html">Quick Start Guide for Slack</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/communication-channels/slack-welcome-guide.html">Slack Welcome Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/newsletters.html">Monthly Newsletters</a><input class="toctree-checkbox" id="toctree-checkbox-78" name="toctree-checkbox-78" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-78"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-process.html">A Process of Creating a newsletter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-style.html">Newsletter's Style Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/newsletters/newsletters-template.html">The Turing Way Newsletter Template</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/bookdash.html">Book Dash Events</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-79"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-application.html">Application and Review Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-logistics.html">Book Dash Logistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-illustrator.html">Working With an Illustrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-selection.html">Participant Selection Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-events.html">Book Dash Main Event Plans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/bookdash/bookdash-after.html">After the Book Dash</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/coworking.html">Community Coworking Calls</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-80"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-motivation.html">Background, Motivations, and Techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-collabcafe.html">Online Collaboration Cafe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-weekly.html">Weekly Coworking Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-organisation.html">Organising coworking calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/coworking/coworking-dropins.html">Drop-in Sessions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/fireside-chat.html">Fireside Chat Series</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-81"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/fireside-chat/fireside-chat-checklist.html">Fireside Chat Planning Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/fireside-chat/fireside-chat-roles.html">Fireside Chat Roles and Responsibilities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../community-handbook/presenting.html">Giving a Turing Way Talk</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../community-handbook/templates.html">Template Collection</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-82"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-index.html">Book Dash Main Shared Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-precall.html">Book Dash Pre-event Onboarding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-github.html">Book Dash GitHub Session</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-notes.html">Book Dash Template for Shared Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-bookdash-feedback.html">Book Dash Template for Feedback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-coworking-collabcafe.html">Online Collaboration Cafe Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-coworking-weekly.html">Weekly Coworking Call Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-newsletter-draft.html">Template for Drafting Newsletters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community-handbook/templates/template-fireside-chat.html">Template for Fireside Chat Shared Notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../afterword/afterword.html">Afterword</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-83"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/legal-disclaimer.html">Legal Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/data-usage-statement.html">Data Usage Statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/contributors-record.html">Contributors Record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/collaborators.html">Collaborators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/subprojects.html">Sub-projects, Working Groups, Informal Initiatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../afterword/bibliography.html">Bibliography</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/ethical-research/activism/activism-env-impact.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fethical-research/activism/activism-env-impact.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ethical-research/activism/activism-env-impact.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Environmental Impact of Digital Research</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-problem">Understanding the problem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-summarised">Climate change summarised</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rise-in-global-temperatures-illustrated">Rise in global temperatures illustrated</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#awareness-raising">Awareness raising</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategies-for-reduction">Strategies for reduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computing">Computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-code-efficiency">Improve code efficiency</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-hardware-efficiency">Improve hardware efficiency</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#avoid-unnecessary-tasks">Avoid unnecessary tasks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-tasks-at-low-emission-time">Schedule tasks at low-emission time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-reduction">Data reduction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standardisation">Standardisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#green-data-centers">Green Data Centers</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-resources">Other resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computation">Computation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits">Credits</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-environmental-impact-of-digital-research">
+<span id="er-activism-env-impact"></span><h1>The Environmental Impact of Digital Research<a class="headerlink" href="#the-environmental-impact-of-digital-research" title="Permalink to this headline">#</a></h1>
+<p>As multiple reports from the United Nations (such as <a class="reference external" href="https://www.ipcc.ch/report/ar6/syr/">IPCC | Climate Change 2023: Synthesis Report</a> and <a class="reference external" href="https://public.wmo.int/en/our-mandate/climate/global-annual-decadal-climate-update">WMO | Global Annual to Decadal Climate Update</a>) have shown, the global climate crisis impacts all of us. From this, reducing carbon emissions has emerged as a means of addressing the climate crisis. For those of us that do computing as part of our day-to-day work, it can form a significant part of our environmental impact, both for us personally and for our organisation(s). In particular, if you or your group does intensive computing, making use of high-performance computers or cloud resources, for example to train intricate models or run complex simulations, the carbon footprint can be sizable.</p>
+<p>For this reason, it is important to consider the environmental impact of the computational work you and your colleagues and collaborators do, including having awareness of the possible scale of it in relation to other activities you undertake as part of day-to-day life. With this awareness, it follows that we should all aim to reduce our carbon footprint for our work activities.</p>
+<p>This guide helps data and computational scientists to better understand the environmental impacts of their work and projects, as well as providing suggestions for reducing the impact of it.</p>
+<p>The topic is not new, it has for example been discussed during <a class="reference external" href="https://software.ac.uk/blog/2023-08-15-tracking-environmental-impact-research-computing">CW23</a>.</p>
+<section id="understanding-the-problem">
+<span id="er-activism-env-impact-understanding"></span><h2>Understanding the problem<a class="headerlink" href="#understanding-the-problem" title="Permalink to this headline">#</a></h2>
+<p>Most of us are aware of the general context of our planet being subject to climate change that results largely from human influence, and how this poses a great threat to our society. However, in case you are not, and indeed to emphasise this crucial background, we’ll summarise this background.</p>
+<section id="climate-change-summarised">
+<span id="er-activism-env-impact-climate-change-sumarised"></span><h3>Climate change summarised<a class="headerlink" href="#climate-change-summarised" title="Permalink to this headline">#</a></h3>
+<p>Human activities, notably the burning of fossil fuels like oil, gas or coal, to generate electricity and to power cars (amongst many other tasks) release greenhouse gases into the atmosphere. These gases, such as carbon dioxide, trap heat in the atmosphere, which in turn raises the temperature of the surface of the Earth. While not linear, over time, <a class="reference external" href="http://climate.nasa.gov/vital-signs/global-temperature/">the global average temperature rises</a>.</p>
+</section>
+<section id="rise-in-global-temperatures-illustrated">
+<span id="er-activism-env-impact-rise-in-temperature"></span><h3>Rise in global temperatures illustrated<a class="headerlink" href="#rise-in-global-temperatures-illustrated" title="Permalink to this headline">#</a></h3>
+<p>The rise in this global average temperature is strikingly illustrated by the ‘Warming Stripes’ (‘#ShowYourStripes’) project, a minimalist-style data visualisation created by Ed Hawkins. Average Earth surface temperatures are indicated as stripes in blue hues, representing cooler temperatures, through to red hues, representing warmer ones, where each stripe covers a single year.</p>
+<p>The general trend shows a progression, over the past few centuries or so, from there being more blue on the left (towards the past) to more red on the right (towards the present). In short, the surface of our planet is, overall and year-on-year, warming!</p>
+<figure class="align-default" id="global-warming-stripes-by-ed-hawkins">
+<a class="reference internal image-reference" href="../../_images/global_warming_stripes.png"><img alt="Global warming stripes, by Ed Hawkins." src="../../_images/global_warming_stripes.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 150 </span><span class="caption-text">Global warming stripes, by Ed Hawkins.</span><a class="headerlink" href="#global-warming-stripes-by-ed-hawkins" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This more verbose figure makes it more explicit what the global warming stripes represent. You can find these and more figures on the <a class="reference external" href="https://showyourstripes.info/s/globe">canonical warming stripes page</a>.</p>
+<figure class="align-default" id="bars-with-scale-by-ed-hawkins">
+<a class="reference internal image-reference" href="../../_images/GLOBE---1850-2022-MO-barslabel.png"><img alt="Bars with Scale, by Ed Hawkins." src="../../_images/GLOBE---1850-2022-MO-barslabel.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 151 </span><span class="caption-text">Bars with Scale, by Ed Hawkins.</span><a class="headerlink" href="#bars-with-scale-by-ed-hawkins" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="awareness-raising">
+<span id="er-activism-env-impact-awareness-raising"></span><h2>Awareness raising<a class="headerlink" href="#awareness-raising" title="Permalink to this headline">#</a></h2>
+<p>Below we share some thought-provoking questions about the Environmental Impact of Digital Research.</p>
+<ul class="simple">
+<li><p>Where in the world did your last computer end up? An estimated 50 million tons of electronic waste are discarded each year. This is equivalent to throwing out 1000 laptops every single second. Less than 20% of e-waste is formally recycled, with 80% either ending up in landfill on developing countries, exposing vulnerable populations and their environment to health and pollution impacts (ref: <a class="reference external" href="https://www3.weforum.org/docs/WEF_A_New_Circular_Vision_for_Electronics.pdf">https://www3.weforum.org/docs/WEF_A_New_Circular_Vision_for_Electronics.pdf</a>).</p></li>
+<li><p>How much unused or inaccessible data do you have on the cloud? In 2021, on average, 35% of enterprise data is “dark,” meaning it has an unknown value, while 50% is redundant, obsolete or trivial. Only about 16% is business-critical, the study concluded. (ref: <a class="reference external" href="https://www.veritas.com/content/dam/Veritas/docs/reports/GA_ENT_AR_Veritas-Vulnerability-Gap-Report-Global_V1414.pdf">https://www.veritas.com/content/dam/Veritas/docs/reports/GA_ENT_AR_Veritas-Vulnerability-Gap-Report-Global_V1414.pdf</a>)</p></li>
+<li><p>How much of the world’s total electricity will the technological sector use by 2025? It is predicted that by 2025, the technology sector will consume 20% of the world’s total electricity (compared to 7% in 2022). Ref: <a class="reference external" href="https://www.tier1.com/the-environmental-impact-of-our-data-storage/">https://www.tier1.com/the-environmental-impact-of-our-data-storage/</a>)</p></li>
+</ul>
+</section>
+<section id="strategies-for-reduction">
+<span id="er-activism-env-impact-reduction-strategies"></span><h2>Strategies for reduction<a class="headerlink" href="#strategies-for-reduction" title="Permalink to this headline">#</a></h2>
+<p>There are several things that can be done to reduce the environmental impact of digital research. In this section we describe some of the possible actions grouped in two major groups, computing and data, and links to external resources that can implement them.</p>
+<p>These actions are not listed in any order of importance, and implementing any or some of them is better than not doing anything at all.</p>
+<p>You can also read ‘Ten simple rules to make your computing more environmentally sustainable’ <span id="id1">[<a class="reference internal" href="../../afterword/bibliography.html#id180" title="Loïc Lannelongue, Jason Grealey, Alex Bateman, and Michael Inouye. Ten simple rules to make your computing more environmentally sustainable. PLOS Computational Biology, 17(9):1-8, 09 2021. URL: https://doi.org/10.1371/journal.pcbi.1009324, doi:10.1371/journal.pcbi.1009324.">LGBI21</a>]</span> and the <a class="reference external" href="https://sas-dhrh.github.io/dhcc-toolkit/">Digital Humanities Climate Coalition Toolkit</a>.</p>
+<section id="computing">
+<span id="er-activism-env-impact-computing"></span><h3>Computing<a class="headerlink" href="#computing" title="Permalink to this headline">#</a></h3>
+<p>As we engage in research activities, our utilization of computers and code execution significantly affects the environment. In this section, we explore approaches that can be employed to mitigate the environmental impact arising from the computational aspects of our research endeavors.</p>
+<section id="improve-code-efficiency">
+<span id="er-activism-env-impact-code-efficiency"></span><h4>Improve code efficiency<a class="headerlink" href="#improve-code-efficiency" title="Permalink to this headline">#</a></h4>
+<p>As mentioned above, the amount of energy spent on running a computation depends on how long the particular computation runs. One way of reducing the energy spent is to optimize the code to make it run faster.</p>
+<p>Several studies show the energy intensity of computing tasks such as training Natural Language Processing models <span id="id2">[<a class="reference internal" href="../../afterword/bibliography.html#id182" title="Roy Schwartz, Jesse Dodge, Noah A. Smith, and Oren Etzioni. Green ai. Commun. ACM, 63(12):54–63, nov 2020. URL: https://doi.org/10.1145/3381831, doi:10.1145/3381831.">SDSE20</a>, <a class="reference internal" href="../../afterword/bibliography.html#id181" title="Emma Strubell, Ananya Ganesh, and Andrew McCallum. Energy and policy considerations for deep learning in NLP. CoRR, 2019. URL: http://arxiv.org/abs/1906.02243, arXiv:1906.02243.">SGM19</a>]</span>, astrophysics simulations <span id="id3">[<a class="reference internal" href="../../afterword/bibliography.html#id183" title="Simon Portegies Zwart. The ecological impact of high-performance computing in astrophysics. Nature Astronomy, 4(9):819–822, sep 2020. URL: https://doi.org/10.1038%2Fs41550-020-1208-y, doi:10.1038/s41550-020-1208-y.">Zwa20</a>]</span>, bioinformatics <span id="id4">[<a class="reference internal" href="../../afterword/bibliography.html#id184" title="Jason Grealey, Loïc Lannelongue, Woei-Yuh Saw, Jonathan Marten, Guillaume Méric, Sergio Ruiz-Carmona, and Michael Inouye. The Carbon Footprint of Bioinformatics. Molecular Biology and Evolution, 02 2022. msac034. URL: https://doi.org/10.1093/molbev/msac034, arXiv:https://academic.oup.com/mbe/article-pdf/39/3/msac034/42692776/msac034.pdf, doi:10.1093/molbev/msac034.">GLS+22</a>]</span>, and so forth.</p>
+<p>Optimizing GPU code for energy efficiency is one way to reduce energy usage <span id="id5">[<a class="reference internal" href="../../afterword/bibliography.html#id185" title="Richard Schoonhoven, Bram Veenboer, Ben van Werkhoven, and Kees Joost Batenburg. Going green: optimizing gpus for energy efficiency through model-steered auto-tuning. 2022. arXiv:2211.07260.">SVvWB22</a>]</span></p>
+</section>
+<section id="improve-hardware-efficiency">
+<span id="er-activism-env-impact-hardware-efficiency"></span><h4>Improve hardware efficiency<a class="headerlink" href="#improve-hardware-efficiency" title="Permalink to this headline">#</a></h4>
+<p>In some cases it is possible to run hardware in more energy-efficient modes. One relevant example is the ARCHER2 national high-performance computer service in the UK where three different CPU frequencies can be selected at run time. A 2022 study investigated the performance / power use trade off and discovered the power usage could often be reduced without noticeable alteration in the run time of most applications, by changing the CPU frequency to a different value from the three possibilities. As a consequence the service reduced the default CPU frequency and updated the user-facing documentation in this area (see Turner, 2022).</p>
+<p>For the Summit supercomputer it is known that about 63.8% of the power is consumed by GPUs
+<span id="id6">[<a class="reference internal" href="../../afterword/bibliography.html#id186" title="Matthias Stachowski, Alexander Fiebig, and Thomas Rauber. Autotuning based on frequency scaling toward energy efficiency of blockchain algorithms on graphics processing units. The Journal of Supercomputing, 77(1):263–291, 2020. doi:10.1007/s11227-020-03263-5.">SFR20</a>]</span>.</p>
+</section>
+<section id="avoid-unnecessary-tasks">
+<span id="er-activism-env-impact-avoid-tasks"></span><h4>Avoid unnecessary tasks<a class="headerlink" href="#avoid-unnecessary-tasks" title="Permalink to this headline">#</a></h4>
+<p>Another way of reducing energy usage is to avoid running task unnecessarily. Some examples include:</p>
+<ul class="simple">
+<li><p>Running CI[<a class="reference external" href="https://book.the-turing-way.org/reproducible-research/ci/ci-options.html">https://book.the-turing-way.org/reproducible-research/ci/ci-options.html</a>] only when it is useful. For example: do not run unit tests when changes are made in the documentation and not on the code.</p></li>
+<li><p>If you do test-driven development, run only tests that have previously failed. In this way you do not need to test code which you already know has been tested. You can use this GH action for limiting when tests (pytest) are run: <a class="github reference external" href="https://github.com/marketplace/actions/pytest-last-failed">marketplace/actions</a></p></li>
+<li><p>Run CI with smaller datasets.</p></li>
+</ul>
+</section>
+<section id="schedule-tasks-at-low-emission-time">
+<span id="er-activism-env-impact-schedule-low-emission"></span><h4>Schedule tasks at low-emission time<a class="headerlink" href="#schedule-tasks-at-low-emission-time" title="Permalink to this headline">#</a></h4>
+<p>Energy usage at different times of the day has different carbon intensity. This means that there is also an opportunity to reduce carbon emissions by running computing jobs at different times of the day. While the energy usage remains the same, the carbon intensity can be lowered in this way.</p>
+<p>The Climate Aware Task Scheduler (CATS)[<a class="github reference external" href="https://github.com/GreenScheduler/cats">GreenScheduler/cats</a>] has been built specifically with this in mind. This tool can calculate how much carbon will be emitted during the run of a specific task, look at the carbon emission forecast, and schedule the task to be run at a time when carbon intensity is low.</p>
+<figure class="align-default" id="environmental-impact">
+<a class="reference internal image-reference" href="../../_images/environmental-impact.jpg"><img alt="Cartoon-like sketch depicting the potential environmental impact of digital research. The illustration is mostly done in a teal blue, with a black cloud in the background, with emissions written across it. On the left, a person sits at a desk with a laptop, with a chatbot and &quot;COMPUTING&quot; text above, symbolizing digital communication. Behind the chatbot lurks three black cogwheels. In the center, &quot;EMISSIONS&quot; emerge from a factory, representing pollution. On the right, a figure throws computers into the ocean, labeled &quot;WASTE&quot;, indicating electronic disposal issues." src="../../_images/environmental-impact.jpg" style="width: 574px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 152 </span><span class="caption-text">Illustration of the potential environmental impact of digital research.
+<em>The Turing Way</em> project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <a class="reference external" href="https://doi.org/10.5281/zenodo.8169292">10.5281/zenodo.8169292</a>.</span><a class="headerlink" href="#environmental-impact" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="data">
+<span id="er-activism-env-impact-data"></span><h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
+<p>The increasing amount of digital research and the associated storage requirements have implications for the environment, and understanding the environmental impact is key for sustainable scientific research practices. One important aspect to consider is the environmental impact of digital storage:</p>
+<section id="data-reduction">
+<span id="er-activism-env-impact-data-reduction"></span><h4>Data reduction<a class="headerlink" href="#data-reduction" title="Permalink to this headline">#</a></h4>
+<p>Reduction of data volumes is a straight-forward solution to minimize energy consumption in storage systems:</p>
+<ul class="simple">
+<li><p>Compression or deduplication can help to detect and delete repeated information.</p></li>
+<li><p>Optimized data requires less time for transfer and consumes less network bandwidth.</p></li>
+</ul>
+</section>
+<section id="standardisation">
+<span id="er-activism-env-impact-data-standardisation"></span><h4>Standardisation<a class="headerlink" href="#standardisation" title="Permalink to this headline">#</a></h4>
+<p>Storing your data in a standardised data format can have a positive impact on the environment:</p>
+<ul class="simple">
+<li><p>Utilize data formats that are widely accepted within your community to prevent the need for conversion by those interested in reusing your data.</p></li>
+<li><p>Similarly, embrace standardized variable names and, if applicable to your data, employ standardized physical units.</p></li>
+</ul>
+<p>In addition, if possible deposit your datasets in domain specific or community archives so that users are promptly informed about the availability of your data. This can also avoid duplication of effort and recomputation/acquisition of the same data.</p>
+</section>
+<section id="green-data-centers">
+<span id="er-activism-env-impact-data-green-centers"></span><h4>Green Data Centers<a class="headerlink" href="#green-data-centers" title="Permalink to this headline">#</a></h4>
+<p>The usage of shared computing and storage infrastructure is usually a way to reduce the impact of data storage in the environment. The reason is that most data centres invest in energy-efficient servers, storage systems, and networking equipment. This includes using hardware components with high energy efficiency ratings and employing advanced cooling techniques to reduce power consumption. In addition, the implementation of virtualization technologies allows for better usage of server resources.</p>
+<p>Finally, some data centers are shifting towards renewable energy sources (solar, wind, hydroelectric power) and reducing their dependencies on fossil fuels.</p>
+<p>The greenest data/HPC centers are listed on the <a class="reference external" href="https://www.top500.org/lists/green500/">GREEN500 list</a>.</p>
+<p>Whenever you can choose, select data centers that are committed to reducing their carbon footprint.</p>
+</section>
+</section>
+<section id="other-resources">
+<h3>Other resources<a class="headerlink" href="#other-resources" title="Permalink to this headline">#</a></h3>
+<section id="computation">
+<h4>Computation<a class="headerlink" href="#computation" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.green-algorithms.org/">GreenvAlgorithms</a></p></li>
+<li><p><a class="reference external" href="https://onlinelibrary.wiley.com/doi/10.1002/advs.202100707">Green Algorithms: Quantifying the Carbon Footprint of Computation</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/s43586-023-00202-5.epdf?sharing_token=QTc-q5_jBfbwbgHrxjAF3NRgN0jAjWel9jnR3ZoTv0M5cDtvWq4NDOHdun0YacmqG8iEJ146ZGUvxIp3izWvG3qqEI0oN4e5AgJh1ioWOFtL_b-yexmwuBL7nKWggSD22xXBBQe-_M_1jL9gC5WNNOYCZkXrOcuiKp7L_6DvyMI%3D">Carbon footprint estimation for computational research</a></p></li>
+<li><p><a class="reference external" href="https://www.aclweb.org/anthology/P19-1355">Energy and Policy Considerations for Deep Learning in NLP</a></p></li>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1907.10597">Green AI</a></p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1145/3442188.3445922">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</a></p></li>
+<li><p><a class="reference external" href="https://www.cdcs.ed.ac.uk/digital-humanities-climate-coalition">Digital Humanities Climate Coalition
+</a></p></li>
+<li><p><a class="reference external" href="https://www.wren.co/">Wren Carbon calculator</a></p></li>
+<li><p><a class="reference external" href="https://www.archer2.ac.uk/news/2022/12/12/CPUFreq.html">Turner (2022) Study of the impact of CPU frequency on ARCHER2</a>.</p></li>
+<li><p><a class="reference external" href="https://docs.archer2.ac.uk/user-guide/energy/">ARCHER2 documentation</a></p></li>
+</ul>
+</section>
+<section id="id7">
+<h4>Data<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://centaur.reading.ac.uk/79584/1/tgsdcthiia18-towards_green_scientific_data_compression_through_high_level_i_o_interfaces.pd">Green Scientific Data Compression</a></p></li>
+<li><p><a class="reference external" href="https://research.vu.nl/ws/portalfiles/portal/214278850/Jancovic_Marek_Keilbach_Judith_2023_Streaming_Against_the_Environment._Digital_Infrastructures_Video_Compression_and_the_Environmental_Footprint_of_Video_Streaming.pdf">Environmental Impact of Video streaming</a></p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1016/j.rser.2022.112991">Next-generation high-temperature data centers</a></p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1016/j.energy.2022.125495">Zero energy consumption data centers</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">#</a></h2>
+<p>This document draws on discussion from the <a class="reference external" href="https://www.software.ac.uk/">Software Sustainability Institute</a>’s <a class="reference external" href="https://www.software.ac.uk/cw23">Collaborations Workshop 2023 (CW23)</a>, and in particular on the “Raspberry” discussion and speed blogging session on “How do you track the environmental impact of computing?”. We thank all participants of CW23 for engaging around this topic.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ethical-research/activism"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="activism-cultural-change.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Cultural Change</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="activism-robodebt.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Case Study: Tackling Robodebt</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-problem">Understanding the problem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-summarised">Climate change summarised</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rise-in-global-temperatures-illustrated">Rise in global temperatures illustrated</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#awareness-raising">Awareness raising</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategies-for-reduction">Strategies for reduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computing">Computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-code-efficiency">Improve code efficiency</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#improve-hardware-efficiency">Improve hardware efficiency</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#avoid-unnecessary-tasks">Avoid unnecessary tasks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-tasks-at-low-emission-time">Schedule tasks at low-emission time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-reduction">Data reduction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standardisation">Standardisation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#green-data-centers">Green Data Centers</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-resources">Other resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computation">Computation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits">Credits</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Turing Way Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Turing Way Community makes all of their materials publicly available under  <a href="https://github.com/the-turing-way/the-turing-way/blob/main/LICENSE.md">open source licenses</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
